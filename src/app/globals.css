@@ -29,17 +29,9 @@ body {
   font-family: "Game Of Squids", Arial, sans-serif;
 }
 
-.container {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* API page styles */
-.api-page {
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.heading-container {
+  padding: 2rem;
+  padding-bottom: 5rem;
 }
 
 /* Heading styles */
@@ -52,4 +44,73 @@ body {
 
 .heading .highlight {
   color: rgb(255, 88, 116);
+}
+
+/* Cell styles */
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cell.active {
+  background-color: #f0f0f0;
+  color: #333;
+  animation: activate 0.5s forwards;
+}
+
+.cell.inactive {
+  background-color: #000;
+  color: #000;
+  animation: inactivate 0.5s forwards;
+}
+
+.cell .team-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cell .team-number {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.cell .problem-statement {
+  font-size: 0.8rem;
+  color: rgb(255, 88, 116);
+}
+
+@keyframes activate {
+  from {
+    background-color: #000;
+    color: #000;
+  }
+  to {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+}
+
+@keyframes inactivate {
+  from {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  to {
+    background-color: #000;
+    color: #000;
+  }
 }
