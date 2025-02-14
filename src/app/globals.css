@@ -1,0 +1,55 @@
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Font face */
+@font-face {
+  font-family: "Game Of Squids";
+  src: url("/fonts/Game Of Squids.ttf") format("truetype");
+}
+
+/* Global styles */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Game Of Squids", Arial, sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* API page styles */
+.api-page {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.heading {
+  font-family: "Game Of Squids", Arial, sans-serif;
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heading .highlight {
+  color: rgb(255, 88, 116);
+}
