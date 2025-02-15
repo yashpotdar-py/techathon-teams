@@ -19,7 +19,11 @@ const Cell = ({ team, toggleTeamState, style }: CellProps) => {
   };
 
   return (
-    <div className={`cell ${team.teamState}`} style={style} onClick={() => toggleTeamState(team.teamNumber)}>
+    <div
+      className={`cell ${team.teamState}`}
+      style={style}
+      onClick={() => toggleTeamState(team.teamNumber)}
+    >
       <div className="team-number">{formatNumber(team.teamNumber)}</div>
       <div className="team-name">{team.teamName}</div>
       <div className="problem-statement">{team.problemStatement}</div>
