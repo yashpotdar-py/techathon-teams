@@ -61,12 +61,11 @@ const Grid = () => {
   };
 
   const activeTeams = teams.filter((team) => team.teamState === "active");
-  const gridSize = Math.ceil(Math.sqrt(activeTeams.length)); // Calculate grid size
-  const cellSize = Math.max(MIN_CELL_SIZE, 500 / gridSize); // Adjust cell size based on the grid size, with a minimum size
+  const gridSize = Math.ceil(Math.sqrt(activeTeams.length));
+  const cellSize = Math.max(MIN_CELL_SIZE, 500 / gridSize);
 
-  // Function to generate spiral positions
   const generateSpiralPositions = (n: number) => {
-    const positions = Array.from({ length: n }, (_, i) => [0, 0]);
+    const positions = Array.from({ length: n }, () => [0, 0]);
     let x = 0,
       y = 0,
       dx = 0,
