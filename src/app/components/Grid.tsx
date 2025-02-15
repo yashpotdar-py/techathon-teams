@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Cell from "./Cell";
 
 interface Team {
@@ -12,6 +12,16 @@ interface Team {
 
 const Grid = () => {
   const [teams, setTeams] = useState<Team[]>([]);
+  const MIN_CELL_SIZE = 100; // Define the minimum cell size
+
+  // Load audio files
+  const activateSound = useRef<HTMLAudioElement | null>(null);
+  const inactivateSound = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    activateSound.current = new Audio("/public/audio/activate.ogg");
+    inactivateSound.current = new Audio("/public/audio/inactivate.ogg");
+  }, []);
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -25,27 +35,34 @@ const Grid = () => {
     };
 
     fetchTeams();
-    const intervalId = setInterval(fetchTeams, 500); // Fetch data every 5 seconds
+    const intervalId = setInterval(fetchTeams, 100);
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   const toggleTeamState = (teamNumber: number) => {
     setTeams((prevTeams) =>
-      prevTeams.map((team) =>
-        team.teamNumber === teamNumber
-          ? {
-              ...team,
-              teamState: team.teamState === "active" ? "inactive" : "active",
-            }
-          : team
-      )
+      prevTeams.map((team) => {
+        if (team.teamNumber === teamNumber) {
+          const newState = team.teamState === "active" ? "inactive" : "active";
+          if (newState === "active") {
+            activateSound.current?.play();
+          } else {
+            inactivateSound.current?.play();
+          }
+          return {
+            ...team,
+            teamState: newState,
+          };
+        }
+        return team;
+      })
     );
   };
 
   const activeTeams = teams.filter((team) => team.teamState === "active");
   const gridSize = Math.ceil(Math.sqrt(activeTeams.length)); // Calculate grid size
-  const cellSize = Math.max(50, 500 / gridSize); // Adjust cell size based on the grid size
+  const cellSize = Math.max(MIN_CELL_SIZE, 500 / gridSize); // Adjust cell size based on the grid size, with a minimum size
 
   // Function to generate spiral positions
   const generateSpiralPositions = (n: number) => {

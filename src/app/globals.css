@@ -64,20 +64,20 @@ body {
   padding: 10px;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, height 0.3s, width 0.3s; /* Add transitions for smooth animation */
-  animation: fadeIn 0.5s ease-in-out;
+  transition: background-color 0.3s, color 0.3s, height 0.3s, width 0.3s, transform 0.3s; /* Add transitions for smooth animation */
+  animation: fadeInScaleUp 0.5s ease-in-out;
 }
 
 .cell.active {
   background-color: #f0f0f0;
   color: #333;
-  animation: activate 0.5s forwards;
+  animation: fadeInScaleUp 0.5s forwards;
 }
 
 .cell.inactive {
   background-color: #000;
   color: #000;
-  animation: inactivate 0.5s forwards;
+  animation: fadeOutScaleDown 0.5s forwards;
 }
 
 .cell .team-name {
@@ -96,36 +96,25 @@ body {
   color: rgb(255, 88, 116);
 }
 
-@keyframes activate {
-  from {
-    background-color: #000;
-    color: #000;
-  }
-  to {
-    background-color: #f0f0f0;
-    color: #333;
-  }
-}
-
-@keyframes inactivate {
-  from {
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  to {
-    background-color: #000;
-    color: #000;
-  }
-}
-
-@keyframes fadeIn {
+@keyframes fadeInScaleUp {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes fadeOutScaleDown {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
   }
 }
 
