@@ -25,7 +25,7 @@ const Grid = () => {
     };
 
     fetchTeams();
-    const intervalId = setInterval(fetchTeams, 5000); // Fetch data every 5 seconds
+    const intervalId = setInterval(fetchTeams, 500); // Fetch data every 5 seconds
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, []);
