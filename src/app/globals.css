@@ -7,6 +7,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --cell-size: 150px; /* Default cell size */
+  --grid-size: 1; /* Default grid size */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,12 +59,13 @@ body {
   border-radius: 4px;
   font-size: 1rem;
   color: #333;
-  height: 150px;
-  width: 150px;
+  height: var(--cell-size);
+  width: var(--cell-size);
   padding: 10px;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, height 0.3s, width 0.3s; /* Add transitions for smooth animation */
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .cell.active {
@@ -113,4 +116,43 @@ body {
     background-color: #000;
     color: #000;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), var(--cell-size));
+  grid-template-rows: repeat(var(--grid-size), var(--cell-size));
+  gap: 10px;
+  padding: 20px;
+  justify-content: center; /* Center the grid horizontally */
+  align-content: center; /* Center the grid vertically */
+  place-items: center; /* Center the grid items */
+  height: 100vh; /* Ensure the grid takes the full height of the viewport */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.link-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-link {
+  font-size: 1.2rem;
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.grid-link:hover {
+  text-decoration: underline;
 }
