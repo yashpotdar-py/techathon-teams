@@ -95,28 +95,36 @@ const Grid = () => {
       <div className="counter">
         Active Teams: <span className="highlight">{activeTeams.length}</span>
       </div>
-      <div
-        className="grid-container"
-        style={
-          {
-            "--cell-size": `${cellSize}px`,
-            "--grid-size": gridSize,
-          } as React.CSSProperties
-        }
-      >
-        {activeTeams.map((team, index) => (
-          <Cell
-            key={team.teamNumber}
-            team={team}
-            toggleTeamState={toggleTeamState}
-            style={{
-              gridRowStart: spiralPositions[index][1] + Math.ceil(gridSize / 2),
-              gridColumnStart:
-                spiralPositions[index][0] + Math.ceil(gridSize / 2),
-            }}
-          />
-        ))}
-      </div>
+      {activeTeams.length === 0 ? (
+        <div className="no-teams-message">
+          <p>No active teams available.</p>
+          {/* Add any animation or additional content here */}
+        </div>
+      ) : (
+        <div
+          className="grid-container"
+          style={
+            {
+              "--cell-size": `${cellSize}px`,
+              "--grid-size": gridSize,
+            } as React.CSSProperties
+          }
+        >
+          {activeTeams.map((team, index) => (
+            <Cell
+              key={team.teamNumber}
+              team={team}
+              toggleTeamState={toggleTeamState}
+              style={{
+                gridRowStart:
+                  spiralPositions[index][1] + Math.ceil(gridSize / 2),
+                gridColumnStart:
+                  spiralPositions[index][0] + Math.ceil(gridSize / 2),
+              }}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
