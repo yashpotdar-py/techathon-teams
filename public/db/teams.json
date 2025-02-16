@@ -3,30 +3,90 @@
     "teamNumber": 1,
     "teamName": "Team 1",
     "problemStatement": "DM-2",
-    "teamState": "inactive"
+    "teamState": "active"
   },
   {
     "teamNumber": 2,
     "teamName": "Team 2",
     "problemStatement": "DM-2",
-    "teamState": "inactive"
+    "teamState": "active"
   },
   {
     "teamNumber": 3,
     "teamName": "Team 3",
     "problemStatement": "DM-2",
-    "teamState": "inactive"
+    "teamState": "active"
   },
   {
     "teamNumber": 4,
     "teamName": "Team 4",
     "problemStatement": "DM-2",
-    "teamState": "inactive"
+    "teamState": "active"
   },
   {
     "teamNumber": 5,
     "teamName": "Team 5",
     "problemStatement": "DM-2",
-    "teamState": "inactive"
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 6,
+    "teamName": "Team 6",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 7,
+    "teamName": "Team 7",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 8,
+    "teamName": "Team 8",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 9,
+    "teamName": "Team 9",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 10,
+    "teamName": "Team 10",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 11,
+    "teamName": "Team 11",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 12,
+    "teamName": "Team 12",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 13,
+    "teamName": "Team 13",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 14,
+    "teamName": "Team 14",
+    "problemStatement": "DM-2",
+    "teamState": "active"
+  },
+  {
+    "teamNumber": 15,
+    "teamName": "Team 15",
+    "problemStatement": "DM-2",
+    "teamState": "active"
   }
 ]
