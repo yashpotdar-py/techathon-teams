@@ -1,0 +1,32 @@
+[
+  {
+    "teamNumber": 1,
+    "teamName": "Team 1",
+    "problemStatement": "DM-2",
+    "teamState": "inactive"
+  },
+  {
+    "teamNumber": 2,
+    "teamName": "Team 2",
+    "problemStatement": "DM-2",
+    "teamState": "inactive"
+  },
+  {
+    "teamNumber": 3,
+    "teamName": "Team 3",
+    "problemStatement": "DM-2",
+    "teamState": "inactive"
+  },
+  {
+    "teamNumber": 4,
+    "teamName": "Team 4",
+    "problemStatement": "DM-2",
+    "teamState": "inactive"
+  },
+  {
+    "teamNumber": 5,
+    "teamName": "Team 5",
+    "problemStatement": "DM-2",
+    "teamState": "inactive"
+  }
+]
