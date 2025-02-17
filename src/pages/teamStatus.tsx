@@ -40,7 +40,7 @@ const TeamStatus = () => {
 
   return (
     <div className="container" style={{marginTop: "20rem"}}>
-      <h1>Team Status</h1>
+      <h1>Team <span className="highlight">Status</span></h1>
       <div className="input-group">
         <label>
           Team Number:
