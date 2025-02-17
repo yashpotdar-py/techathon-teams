@@ -1,5 +1,11 @@
 import { useState } from "react";
 import "@/app/globals.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Check In",
+  description: "Created by Yash Potdar",
+};
 
 interface Team {
   teamNumber: number;

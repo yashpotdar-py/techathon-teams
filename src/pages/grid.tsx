@@ -1,6 +1,12 @@
 import React from "react";
 import Grid from "@/app/components/Grid";
 import "@/app/globals.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Techathon 2.0 Grid",
+  description: "Created by Yash Potdar",
+};
 
 const grid = () => {
   return (
