@@ -12,6 +12,7 @@ const CheckIn = () => {
   const [teamNumber, setTeamNumber] = useState<number | null>(null);
   const [team, setTeam] = useState<Team | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null); // added success state
 
   const handleFindTeam = async () => {
     if (teamNumber === null) {
@@ -61,7 +62,8 @@ const CheckIn = () => {
 
       if (response.ok) {
         setError(null);
-        alert("Team checked in successfully!");
+        setSuccess("Team checked in successfully!"); // set success message
+        setTimeout(() => setSuccess(null), 1000); // clear after 1s
       } else {
         throw new Error(result.message || "Failed to check in team.");
       }
@@ -76,7 +78,7 @@ const CheckIn = () => {
 
   return (
     <div className="container"  style={{marginTop: "20rem"}}>
-      <h1>Check In Team</h1>
+      <h1>Check In <span className="highlight">Team</span></h1>
       <div>
         <label>
           Team Number:
@@ -90,6 +92,7 @@ const CheckIn = () => {
         <button onClick={handleFindTeam}>Find Team</button>
       </div>
       {error && <p className="error-message">{error}</p>}
+      {success && <p className="success-message">{success}</p>} {/* render success message */}
       {team && (
         <div className="team-details">
           <h2>Team Details</h2>

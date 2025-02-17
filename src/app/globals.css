@@ -5,20 +5,20 @@
 
 /* Global Variables */
 :root {
-  /* Colors */
-  --background: #0f172a;
-  --foreground: #f1f5f9;
-  --primary: #3b82f6;
-  --primary-hover: #2563eb;
-  --secondary: #f43f5e;
-  --secondary-hover: #e11d48;
-  --accent: #8b5cf6;
-  --surface: #1e293b;
-  --surface-hover: #334155;
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --success: #22c55e;
-  --error: #ef4444;
+  /* Colors - Bright and Vibrant */
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --primary: #ffffff;          /* Pure White */
+  --primary-hover: #e6e6e6;    /* Slightly Dimmed White */
+  --secondary: rgb(255, 88, 116);  /* Vibrant Pink */
+  --secondary-hover: rgb(255, 61, 95);
+  --accent: rgb(88, 101, 242);    /* Discord Blue */
+  --surface: #1a1a1a;
+  --surface-hover: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --success: rgb(87, 242, 135);   /* Vibrant Green */
+  --error: rgb(255, 71, 71);      /* Vibrant Red */
 
   /* Animation Timings */
   --transition-fast: 150ms;
@@ -84,11 +84,13 @@ h1 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Optional: adds subtle glow */
   transition: opacity var(--transition-normal) var(--ease);
+}
+
+.highlight {
+  color: var(--secondary);
 }
 
 /* Form Elements */
@@ -107,7 +109,7 @@ form:hover {
 label {
   display: block;
   font-size: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
   color: var(--foreground);
 }
 
@@ -139,7 +141,7 @@ input:focus {
 button {
   padding: 0.75rem 1.5rem;
   background: var(--primary);
-  color: white;
+  color: #000;
   border: none;
   border-radius: var(--radius-md);
   font-weight: 600;
@@ -152,7 +154,7 @@ button {
 button:hover {
   background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgb(59 130 246 / 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 button:active {
@@ -164,7 +166,8 @@ button.deactivate {
 }
 
 button.deactivate:hover {
-  background-color: var(--secondary-hover);
+  background: var(--secondary-hover);
+  box-shadow: 0 0 20px rgba(255, 88, 116, 0.5);
 }
 
 .error-message {
@@ -282,7 +285,7 @@ button.deactivate:hover {
 
 .cell .problem-statement {
   font-size: 0.8rem;
-  color: rgb(255, 88, 116);
+  color: var(--secondary);
 }
 
 @keyframes fadeInScaleUp {
@@ -376,7 +379,7 @@ button.deactivate:hover {
 }
 
 .description .highlight {
-  color: rgb(255, 88, 116);
+  color: var(--secondary);
 }
 
 .no-teams-message {
@@ -475,7 +478,7 @@ button.deactivate:hover {
 .find-button {
   padding: 10px 20px;
   font-size: 1rem;
-  color: #fff;
+  color: #000;
   background-color: var(--primary);
   border: none;
   border-radius: 4px;
@@ -544,6 +547,7 @@ button.deactivate:hover {
   color: var(--secondary);
   margin-bottom: 10px;
   animation: slideInFromLeft 1s ease-in-out;
+  text-shadow: 0 0 20px rgba(255, 51, 102, 0.3);
 }
 
 .main-heading {
@@ -551,6 +555,7 @@ button.deactivate:hover {
   color: var(--primary);
   cursor: pointer;
   transition: transform 0.3s, color 0.3s;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .main-heading:hover {
@@ -565,7 +570,7 @@ button.deactivate:hover {
 .status-button {
   padding: 10px 20px;
   font-size: 1.5rem;
-  color: #fff;
+  color: #000;
   background-color: var(--primary);
   border: none;
   border-radius: 4px;
@@ -622,4 +627,38 @@ button.deactivate:hover {
   transform: translateY(-20px);
   transition: opacity var(--transition-normal) var(--ease),
     transform var(--transition-normal) var(--ease);
+}
+
+@keyframes growAndFade {
+  0% {
+    transform: scale(1);
+    color: var(--background);
+  }
+  20% {
+    transform: scale(50);
+    color: var(--background);
+  }
+  40% {
+    transform: scale(100);
+    color: var(--background);
+  }
+  60% {
+    transform: scale(200);
+    color: var(--background);
+  }
+  80% {
+    transform: scale(400);
+    color: var(--background);
+  }
+  100% {
+    transform: scale(800);
+    color: var(--background);
+    opacity: 1;
+  }
+}
+
+.grow-and-fade {
+  animation: growAndFade 4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  position: relative;
+  z-index: 100;
 }

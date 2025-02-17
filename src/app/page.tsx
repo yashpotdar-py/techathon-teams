@@ -16,10 +16,10 @@ export default function Home() {
 
   const handleGridClick = () => {
     if (headingRef.current) {
-      headingRef.current.classList.add("fade-out");
+      headingRef.current.classList.add('grow-and-fade');
       setTimeout(() => {
         router.push("/grid");
-      }, 1000);
+      }, 900); // Slightly before animation ends
     }
   };
 
