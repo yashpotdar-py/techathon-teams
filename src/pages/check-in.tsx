@@ -45,22 +45,25 @@ const CheckIn = () => {
     }
 
     try {
-      const response = await fetch("/api/teams");
-      const teams: Team[] = await response.json();
-      const teamIndex = teams.findIndex((t: Team) => t.teamNumber === team.teamNumber);
-      if (teamIndex !== -1) {
-        teams[teamIndex].teamState = "active";
-        await fetch("/api/teams", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(teams),
-        });
+      const response = await fetch("/api/handleCell", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          teamNumber: team.teamNumber,
+          teamName: team.teamName,
+          problemStatement: team.problemStatement,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
         setError(null);
         alert("Team checked in successfully!");
       } else {
-        throw new Error("Team not found.");
+        throw new Error(result.message || "Failed to check in team.");
       }
     } catch (err) {
       if (err instanceof Error) {
