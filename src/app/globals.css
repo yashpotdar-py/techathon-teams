@@ -1,31 +1,32 @@
-/* Core styles and variables */
+/* Tailwind Imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Global Variables */
 :root {
-  /* Colors - Using a more modern color palette */
-  --background: #0f172a; /* Darker blue-gray */
-  --foreground: #f1f5f9; /* Light gray */
-  --primary: #3b82f6; /* Vibrant blue */
+  /* Colors */
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --primary: #3b82f6;
   --primary-hover: #2563eb;
-  --secondary: #f43f5e; /* Vibrant pink */
+  --secondary: #f43f5e;
   --secondary-hover: #e11d48;
-  --accent: #8b5cf6; /* Purple */
-  --surface: #1e293b; /* Lighter blue-gray */
+  --accent: #8b5cf6;
+  --surface: #1e293b;
   --surface-hover: #334155;
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --success: #22c55e;
   --error: #ef4444;
-  
-  /* Animations */
+
+  /* Animation Timings */
   --transition-fast: 150ms;
   --transition-normal: 250ms;
   --transition-slow: 350ms;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* Sizing */
+
+  /* Layout Measurements */
   --container-width: 1200px;
   --header-height: 4rem;
   --radius-sm: 0.375rem;
@@ -33,6 +34,7 @@
   --radius-lg: 1rem;
 }
 
+/* Dark Mode Overrides */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #121212;
@@ -40,14 +42,14 @@
   }
 }
 
-/* Typography */
+/* Custom Font */
 @font-face {
   font-family: "Game Of Squids";
   src: url("/fonts/Game Of Squids.ttf") format("truetype");
   font-display: swap;
 }
 
-/* Base styles */
+/* Base Elements */
 body {
   color: var(--text-primary);
   background: var(--background);
@@ -57,6 +59,7 @@ body {
   line-height: 1.5;
 }
 
+/* Container Styles */
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -64,10 +67,10 @@ body {
   background: var(--surface);
   border-radius: var(--radius-lg);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-              0 8px 10px -6px rgb(0 0 0 / 0.1);
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
   backdrop-filter: blur(8px);
   transition: transform var(--transition-normal) var(--ease),
-              box-shadow var(--transition-normal) var(--ease);
+    box-shadow var(--transition-normal) var(--ease);
 }
 
 .container:hover {
@@ -75,6 +78,7 @@ body {
   box-shadow: 0 25px 30px -12px rgb(0 0 0 / 0.25);
 }
 
+/* Typography */
 h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
@@ -82,10 +86,12 @@ h1 {
   margin-bottom: 2rem;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   transition: opacity var(--transition-normal) var(--ease);
 }
 
+/* Form Elements */
 form {
   background: #1e1e1e;
   padding: 20px;
@@ -120,7 +126,7 @@ input {
   color: var(--text-primary);
   font-size: 1rem;
   transition: border-color var(--transition-fast) var(--ease),
-              background var(--transition-fast) var(--ease);
+    background var(--transition-fast) var(--ease);
 }
 
 input:focus {
@@ -129,6 +135,7 @@ input:focus {
   background: var(--surface);
 }
 
+/* Button Styles */
 button {
   padding: 0.75rem 1.5rem;
   background: var(--primary);
@@ -138,8 +145,8 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: transform var(--transition-fast) var(--ease),
-              background var(--transition-fast) var(--ease),
-              box-shadow var(--transition-fast) var(--ease);
+    background var(--transition-fast) var(--ease),
+    box-shadow var(--transition-fast) var(--ease);
 }
 
 button:hover {
@@ -602,7 +609,7 @@ button.deactivate:hover {
   opacity: 1;
   transform: translateY(0);
   transition: opacity var(--transition-normal) var(--ease),
-              transform var(--transition-normal) var(--ease);
+    transform var(--transition-normal) var(--ease);
 }
 
 .page-transition-exit {
@@ -614,5 +621,5 @@ button.deactivate:hover {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity var(--transition-normal) var(--ease),
-              transform var(--transition-normal) var(--ease);
+    transform var(--transition-normal) var(--ease);
 }
