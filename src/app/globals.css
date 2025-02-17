@@ -1,16 +1,36 @@
-/* Tailwind CSS imports */
+/* Core styles and variables */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Root variables */
 :root {
-  --background: #121212;
-  --foreground: #e0e0e0;
-  --primary-color: #1e88e5;
-  --secondary-color: #e53935;
-  --cell-size: 150px; /* Default cell size */
-  --grid-size: 1; /* Default grid size */
+  /* Colors - Using a more modern color palette */
+  --background: #0f172a; /* Darker blue-gray */
+  --foreground: #f1f5f9; /* Light gray */
+  --primary: #3b82f6; /* Vibrant blue */
+  --primary-hover: #2563eb;
+  --secondary: #f43f5e; /* Vibrant pink */
+  --secondary-hover: #e11d48;
+  --accent: #8b5cf6; /* Purple */
+  --surface: #1e293b; /* Lighter blue-gray */
+  --surface-hover: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --success: #22c55e;
+  --error: #ef4444;
+  
+  /* Animations */
+  --transition-fast: 150ms;
+  --transition-normal: 250ms;
+  --transition-slow: 350ms;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Sizing */
+  --container-width: 1200px;
+  --header-height: 4rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,31 +40,50 @@
   }
 }
 
-/* Font face */
+/* Typography */
 @font-face {
   font-family: "Game Of Squids";
   src: url("/fonts/Game Of Squids.ttf") format("truetype");
+  font-display: swap;
 }
 
-/* Global styles */
+/* Base styles */
 body {
-  color: var(--foreground);
+  color: var(--text-primary);
   background: var(--background);
-  font-family: "Game Of Squids", Arial, sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: "Game Of Squids", system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
 }
 
 .container {
-  max-width: 800px;
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+              0 8px 10px -6px rgb(0 0 0 / 0.1);
+  backdrop-filter: blur(8px);
+  transition: transform var(--transition-normal) var(--ease),
+              box-shadow var(--transition-normal) var(--ease);
+}
+
+.container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 30px -12px rgb(0 0 0 / 0.25);
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
-  color: var(--primary-color);
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity var(--transition-normal) var(--ease);
 }
 
 form {
@@ -66,42 +105,47 @@ label {
   color: var(--foreground);
 }
 
-input[type="number"],
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #333;
-  border-radius: 4px;
-  font-size: 1rem;
-  background-color: #2c2c2c;
-  color: var(--foreground);
-  transition: border-color 0.3s, background-color 0.3s;
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-input[type="number"]:focus,
-input[type="text"]:focus {
-  border-color: var(--primary-color);
-  background-color: #3c3c3c;
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--background);
+  border: 2px solid var(--surface-hover);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast) var(--ease),
+              background var(--transition-fast) var(--ease);
+}
+
+input:focus {
   outline: none;
+  border-color: var(--primary);
+  background: var(--surface);
 }
 
 button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-right: 10px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: transform var(--transition-fast) var(--ease),
+              background var(--transition-fast) var(--ease),
+              box-shadow var(--transition-fast) var(--ease);
 }
 
 button:hover {
-  background-color: #1565c0;
+  background: var(--primary-hover);
   transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(59 130 246 / 0.5);
 }
 
 button:active {
@@ -109,15 +153,15 @@ button:active {
 }
 
 button.deactivate {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
 }
 
 button.deactivate:hover {
-  background-color: #c62828;
+  background-color: var(--secondary-hover);
 }
 
 .error-message {
-  color: var(--secondary-color);
+  color: var(--secondary);
   font-weight: bold;
   margin-top: 10px;
   animation: fadeIn 0.5s ease-in-out;
@@ -130,7 +174,7 @@ button.deactivate:hover {
 .team-details h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 .team-details div {
@@ -180,7 +224,7 @@ button.deactivate:hover {
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 5rem;
+  font-size: 2rem;
   z-index: 1000;
 }
 
@@ -356,9 +400,11 @@ button.deactivate:hover {
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -392,4 +438,181 @@ button.deactivate:hover {
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #2c2c2c;
+  color: var(--foreground);
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: var(--primary);
+  background-color: #3c3c3c;
+  outline: none;
+}
+
+.find-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.find-button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+.find-button:active {
+  transform: translateY(0);
+}
+
+.detail-item {
+  margin-bottom: 10px;
+}
+
+.detail-item label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.detail-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c2c2c;
+  color: var(--foreground);
+}
+
+.status-message {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.status-message.inactive {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.welcome-text {
+  font-size: 4rem;
+  color: var(--secondary);
+  margin-bottom: 10px;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.main-heading {
+  font-size: 12rem;
+  color: var(--primary);
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.main-heading:hover {
+  transform: scale(1.1);
+  color: var(--highlight-color);
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.status-button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.status-button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+.status-button:active {
+  transform: translateY(0);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--transition-normal) var(--ease),
+              transform var(--transition-normal) var(--ease);
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity var(--transition-normal) var(--ease),
+              transform var(--transition-normal) var(--ease);
 }

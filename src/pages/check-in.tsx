@@ -75,7 +75,7 @@ const CheckIn = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container"  style={{marginTop: "20rem"}}>
       <h1>Check In Team</h1>
       <div>
         <label>

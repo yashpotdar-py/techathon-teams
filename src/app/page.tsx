@@ -1,26 +1,37 @@
+"use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
+import "@/app/globals.css";
 
 export default function Home() {
+  const router = useRouter();
+  const headingRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (headingRef.current) {
+      headingRef.current.classList.add("fade-in");
+    }
+  }, []);
+
+  const handleGridClick = () => {
+    if (headingRef.current) {
+      headingRef.current.classList.add("fade-out");
+      setTimeout(() => {
+        router.push("/grid");
+      }, 1000);
+    }
+  };
+
   return (
-    <div>
-      <div className="heading-container">
-        <h1 className="heading">
-          Techathon <span className="highlight">2.0</span>
-        </h1>
+    <div className="home-container">
+      <div className="welcome-text">Welcome To</div>
+      <div className="main-heading" ref={headingRef} onClick={handleGridClick}>
+        Techathon <span className="highlight">2.0</span>
       </div>
-      <div className="description-container">
-        <p className="description">Welcome to Techathon 2.0</p>
-        <p className="description">
-          <span className="highlight">Join us</span> for a series of intense
-          coding challenges where{" "}
-          <span className="highlight">only the best will prevail</span>. Will
-          you be the one to <span className="highlight">claim victory</span> and
-          emerge as the <span className="highlight">ultimate team</span>?
-        </p>
-      </div>
-      <div className="link-container">
-        <Link href="/grid" className="grid-link">
-          Enter the Grid
+      <div className="button-container">
+        <Link href="/teamStatus">
+          <button className="status-button">Check Team Status</button>
         </Link>
       </div>
     </div>
