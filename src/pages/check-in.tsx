@@ -11,56 +11,61 @@ interface Team {
 const CheckIn = () => {
   const [teamNumber, setTeamNumber] = useState<number | null>(null);
   const [team, setTeam] = useState<Team | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
-  const findTeam = async () => {
-    if (teamNumber !== null) {
-      try {
-        const response = await fetch(`/api/handleCell?teamNumber=${teamNumber}`);
-        const data = await response.json();
-        if (data.success) {
-          setTeam(data.team);
-        } else {
-          alert("Team not found");
-        }
-      } catch (error) {
-        console.error("Failed to fetch team:", error);
+  const handleFindTeam = async () => {
+    if (teamNumber === null) {
+      setError("Please enter a team number.");
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/teams");
+      const teams: Team[] = await response.json();
+      const foundTeam = teams.find((t: Team) => t.teamNumber === teamNumber);
+      if (!foundTeam) {
+        throw new Error("Team not found.");
       }
+      setTeam(foundTeam);
+      setError(null);
+    } catch (err) {
+      setError(err.message);
+      setTeam(null);
     }
   };
 
-  const updateTeamState = async (newState: "active" | "inactive") => {
-    if (team) {
-      try {
-        const response = await fetch("/api/handleCell", {
+  const handleCheckInTeam = async () => {
+    if (team === null) {
+      setError("No team selected.");
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/teams");
+      const teams: Team[] = await response.json();
+      const teamIndex = teams.findIndex((t: Team) => t.teamNumber === team.teamNumber);
+      if (teamIndex !== -1) {
+        teams[teamIndex].teamState = "active";
+        await fetch("/api/teams", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            teamNumber: team.teamNumber,
-            teamName: team.teamName,
-            problemStatement: team.problemStatement,
-            teamState: newState,
-          }),
+          body: JSON.stringify(teams),
         });
-        const data = await response.json();
-        if (data.success) {
-          alert(`Team ${newState === "active" ? "activated" : "deactivated"} successfully`);
-          setTeam({ ...team, teamState: newState });
-        } else {
-          alert(`Failed to ${newState === "active" ? "activate" : "deactivate"} team`);
-        }
-      } catch (error) {
-        console.error(`Failed to ${newState === "active" ? "activate" : "deactivate"} team:`, error);
+        setError(null);
+        alert("Team checked in successfully!");
+      } else {
+        throw new Error("Team not found.");
       }
+    } catch (err) {
+      setError(err.message);
     }
   };
 
   return (
-    <div>
-        <div className="heading-container">
-      <h1 className="heading">Check-In Team</h1>
-        </div>
+    <div className="container">
+      <h1>Check In Team</h1>
       <div>
         <label>
           Team Number:
@@ -68,18 +73,20 @@ const CheckIn = () => {
             type="number"
             value={teamNumber ?? ""}
             onChange={(e) => setTeamNumber(Number(e.target.value))}
+            style={{ backgroundColor: "black" }}
           />
         </label>
-        <button onClick={findTeam}>Find Team</button>
+        <button onClick={handleFindTeam}>Find Team</button>
       </div>
+      {error && <p className="error-message">{error}</p>}
       {team && (
-        <div>
+        <div className="team-details">
           <h2>Team Details</h2>
           <form>
             <div>
               <label>
                 Team Number:
-                <input type="text" value={team.teamNumber} readOnly />
+                <input type="number" value={team.teamNumber} readOnly />
               </label>
             </div>
             <div>
@@ -100,11 +107,8 @@ const CheckIn = () => {
                 <input type="text" value={team.teamState} readOnly />
               </label>
             </div>
-            <button type="button" onClick={() => updateTeamState("active")}>
-              Activate Team
-            </button>
-            <button type="button" onClick={() => updateTeamState("inactive")}>
-              Deactivate Team
+            <button type="button" onClick={handleCheckInTeam}>
+              Check In Team
             </button>
           </form>
         </div>

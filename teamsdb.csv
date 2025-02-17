@@ -1,0 +1,317 @@
+teamNumber,problemStatement,teamName
+001,AS-1,Our Highness
+002,AS-1,Holy coders
+003,AS-1,YeildMax
+004,AS-1,Team Innovators
+005,AS-1,Tech Mavericks
+006,AS-1,Team innovators
+007,AS-2,Kinesis
+008,AS-2,Vishwakarma United Developers
+009,AS-2,ZeroPoint8
+010,AS-2,Quantum Coders
+011,AS-2,Team Eklavya
+012,AS-2,ENCORE
+013,AS-2,Drushtikon
+014,AS-2,Binary Bandits25
+015,AS-2,AgriDirect
+016,AS-2,Neural Ninjas
+017,AS-2,Team farmIQ
+018,AS-2,CodeVerse Innovators
+019,AS-2,The Fantastic Four
+020,AS-2,FarmX
+021,AS-2,Hacknova
+022,AS-2,CodeSmithsSDKR
+023,AS-2,The Alphites
+024,AS-2,Demolition Boys
+025,AS-2,Gaia
+026,AS-2,CBZ
+027,AS-2,FarmSaviour
+028,AS-2,ByteSync
+029,AS-2,Team FieldInsight
+030,AS-2,DashCoders
+031,AS-4,127.0.0.1
+032,AS-4,Digital farmer
+033,AS-4,KrishiConnect
+034,AS-4,Toxic
+035,AS-4,Team CTRL+ALT+Defeat
+036,AS-4,Sapiens
+037,AS-4,GreenWave
+038,AS-4,Loop breakers
+039,AS-4,Vidyut
+040,AS-4,Glitch Fixers
+041,AS-4,PESHWA
+042,AS-4,RockFusion
+043,AS-4,Tech blaster
+044,AS-4,Syntax Squad
+045,AS-4,Build Intellect
+046,AS-4,innoverse
+047,AS-4,Server Squad
+048,AS-4,code crafters
+049,AS-4,Green Gaurdians
+050,AS-5,Error404
+051,AS-5,AgroEngineers
+052,AS-5,GreenVisionX
+053,AS-5,Agrivate
+054,AS-5,Sonic Coders
+055,AS-5,Tech Busters
+056,AS-5,Karnaayudh
+057,AS-5,The Vedas
+058,AS-5,Brave Fusion
+059,AS-5,MRITYUNJAY
+060,AS-5,Pookies🎀
+061,AS-5,Hack_Hustlers
+062,AS-5,TEAM SPYE
+063,AS-5,Unnati Agritech
+064,AS-5,Green Thumbs
+065,AS-5,Team AGRIV
+066,DM-1,DarkSide
+067,DM-1,Status 200
+068,DM-1,Team Sunflower
+069,DM-1,Neural Ninjas
+070,DM-1,ResQ
+071,DM-1,Blunder Biryani
+072,DM-1,Binary Brains
+073,DM-1,404 Found
+074,DM-1,Glitch Sena
+075,DM-1,NextGen Minds
+076,DM-3,Falcons
+077,DM-3,Alpha_Tribe
+078,DM-3,Syntax Terrors
+079,EN-1,Circuit Drifters
+080,EN-1,MECHANICAL
+081,EN-1,CODE HUNTERS
+082,EN-2,HydroVision
+083,EN-2,SJA
+084,EN-2,Jal Janardhan
+085,EN-3,Team AlgoKnights-2
+086,EN-3,Valorants
+087,EN-3,Technoverse
+088,EN-3,Rootify
+089,EN-3,Invictus
+090,EN-3,Error Terminators
+091,EN-3,FloraSync
+092,EN-3,InnoVibe
+093,EN-3,RingZer0s
+094,EN-4,FoodBridges
+095,EN-4,Error404
+096,EN-4,Vector Squad
+097,EN-4,Visionary Ventures
+098,EN-4,HackXplore
+099,EN-4,The Codebreakers
+100,EN-4,Recursia
+101,EN-4,404 Found
+102,EN-4,Error 404
+103,EN-4,"Console.log(""Win"")"
+104,EN-4,Nova
+105,EN-4,Beginner's 🔰
+106,EN-4,B1nary_B0ts
+107,EN-4,Team Edgerunners
+108,EN-4,Sudarshana
+109,EN-4,Food Codex Crew
+110,EN-4,Byte4Bites
+111,EN-4,Tech Cartel
+112,EN-4,CodeVerse Infinix
+113,EN-4,Runtime Terrors
+114,EN-4,Team Code-Blooded
+115,EN-4,Code Crushers
+116,EN-4,Bit Coders
+117,EN-4,HackElite
+118,EN-5,Team S3: Sustainable Solutions Squad
+119,EN-5,RecycleOS
+120,EN-5,CodeVerse Ninjas
+121,EN-5,E-connect
+122,EN-5,Green Bytes
+123,EN-5,AIRIT
+124,EN-5,GRYFFINDOR
+125,EN-5,Vigilantes
+126,EN-5,The Hackonauts
+127,ET-1,ByteSized
+128,ET-1,Coded Chaos
+129,ET-1,CodeXtreme
+130,ET-1,Bash Farmers
+131,ET-1,The Bug Busters
+132,ET-1,Code Crew
+133,ET-1,TECHKNIGHTS-A
+134,ET-1,TechBro
+135,ET-1,BYTE BANDITS
+136,ET-1,CodeForCare
+137,ET-2,SVIT Titans
+138,ET-2,Logic Legends
+139,ET-2,Garuda
+140,ET-2,Cerberus
+141,ET-2,Quibits
+142,ET-2,CharChatur
+143,ET-2,MeghaEvisipro
+144,ET-2,Cipher Squad
+145,ET-2,Team Catalyst
+146,ET-2,Rush Hour Ninjas
+147,ET-2,Vision Squad
+148,ET-2,Git Good
+149,ET-2,The Debuggers
+150,ET-2,Team HASH
+151,ET-2,Matrix Miners
+152,ET-2,NotCoders
+153,ET-2,StarTrek
+154,ET-3,Code Blooded
+155,ET-3,CodePAC
+156,ET-3,NEMESIS PRIME
+157,ET-4,InsightVisioner
+158,ET-4,AMPLIFY
+159,ET-4,AsyncAwait
+160,ET-4,Localhost3000
+161,ET-4,Overclockers
+162,ET-4,The Codefathers
+163,ET-4,Bug Busterz
+164,ET-5,DeepShip
+165,ET-5,Genzopia
+166,ET-5,Code Sprinters
+167,ET-5,THE ETERNALS
+168,HC-1,TechBit
+169,HC-1,Binary Brains
+170,HC-1,Hypertext
+171,HC-1,Spark Ignitors
+172,HC-1,Mindmatters
+173,HC-1,Mind Map cache
+174,HC-1,MetaMinds
+175,HC-1,Neural Navigators
+176,HC-1,NeuroGuardian
+177,HC-2,RAKSHAK
+178,HC-2,CodeCrafters
+179,HC-2,Nerdy Ninjas
+180,HC-2,Code'nCure
+181,HC-2,idea.exe
+182,HC-2,United-13
+183,HC-2,Error_404
+184,HC-2,402
+185,HC-2,TASK
+186,HC-2,Mavericks
+187,HC-2,Blue
+188,HC-2,SyntaxSquad
+189,HC-2,The Kaizens
+190,HC-2,Razorflames
+191,HC-2,Team SATY
+192,HC-2,CareCatalysts
+193,HC-2,Code Hustlers
+194,HC-2,404
+195,HC-2,Sprouting Innovators
+196,HC-2,Team_X
+197,HC-2,Sentinels
+198,HC-2,Team Sentinel
+199,HC-2,Code Innovators
+200,HC-3,Binary Bandhu
+201,HC-3,EasyAI-HealthCheck
+202,HC-3,The Spark Squad
+203,HC-3,Cipher Falcons
+204,HC-3,MediTech
+205,HC-3,Tech Innovators
+206,HC-3,AI Dominators
+207,HC-3,The Four-O-Fours
+208,HC-3,Code-Crafters
+209,HC-3,ElectroSync
+210,HC-3,Smartsynergy
+211,HC-3,Echelon
+212,HC-3,Web Weavers
+213,HC-3,Cipherix
+214,HC-4,Martians
+215,HC-4,Seeking Sponsors
+216,HC-4,Gustakh Boys
+217,HC-5,Error 404
+218,HC-5,ByteMe
+219,HC-5,Sostegno Squad
+220,SI-1,DeepQuest
+221,SI-1,SunVibe
+222,SI-1,Park Pilot
+223,SI-1,Dreamer
+224,SI-1,Team Arc
+225,SI-1,CodeNova
+226,SI-1,Team Redox
+227,SI-1,DevCultivators
+228,SI-1,Abhimanyu Solutions
+229,SI-1,LumpXtract Solutions
+230,SI-1,Chanakya
+231,SI-1,Tensor Titans
+232,SI-1,ParkWise
+233,SI-1,Aditya
+234,SI-1,Team Semicons
+235,SI-1,DeepMind
+236,SI-1,ByteTech
+237,SI-1,Pharmatronics
+238,SI-1,NeoGrid
+239,SI-1,Clueless Coders
+240,SI-1,Aarvya
+241,SI-1,Flauris skincare
+242,SI-1,"""Eco-Larv Solutions"""
+243,SI-1,Neuroglide
+244,SI-1,Kaizen
+245,SI-1,Pair-o-dox
+246,SI-1,Electrical innovators
+247,SI-1,AVINYA
+248,SI-1,RecipeGenius
+249,SI-1,AgriTech
+250,SI-1,THINKERS
+251,SI-1,CrazyCoders
+252,SI-1,Team AlgoKnights
+253,SI-1,Team Curiosity
+254,SI-1,Saksham
+255,SI-1,CLARASTAT
+256,SI-1,Code Snatchers
+257,SI-1,HEALOBETIC
+258,SI-1,Arjuna
+259,SI-1,CodeSphere
+260,SI-1,Newbie Technovators
+261,SI-1,BIOPLASTIC
+262,SI-1,Team Byte
+263,SI-1,Algorithm Assassins
+264,SI-1,CodeBros
+265,SI-1,Code crafters
+266,SI-1,AlgoStrikers
+267,SI-1,NeuralBytes
+268,SI-1,Tech Owls
+269,SI-1,VedHydra
+270,SI-1,Team TASM.H
+271,SI-1,Stunners
+272,SI-1,CivicSphere
+273,SI-1,JeevanX
+274,SI-1,Beta
+275,SI-1,EduSphere
+276,SI-1,Aquadrove
+277,SI-1,CodeX
+278,SI-1,Neural Ninjas
+279,SI-1,Renegan
+280,SI-1,Nexus3
+281,SI-1,SignSpeak
+282,SI-1,Kaizen
+283,SI-1,AgriVision Innovators
+284,SI-1,They not like us
+285,SI-1,Mini Coders
+286,SI-1,Taskers
+287,SI-1,Code Neuralists
+288,SI-1,team Wurkify
+289,SI-1,MMIT Innov8ors
+290,SI-1,Void Hackers
+291,SI-1,Bug hunters
+292,SI-1,Team Abhimanyu
+293,SI-1,404 Legends
+294,SI-1,Loop Lord's
+295,SI-1,Algo Voyagers
+296,SI-1,Event horizon
+297,SI-1,TECHKNIGHTS-B
+298,SI-1,Codefleet
+299,SI-1,Syntax_Error
+300,SI-1,HIVE
+301,SI-1,PowerPulse
+302,SI-1,Animo
+303,SI-1,Logical Coders
+304,SI-1,Ease it
+305,SI-1,Team RoadSense
+306,SI-1,ECOHYDRATE
+307,TS-1,Neural Nexus
+308,TS-1,SQUADX
+309,TS-1,HashBytes
+310,TS-1,Team Rectifer
+311,TS-1,Tech Wolves
+312,TS-3,Confluence
+313,TS-3,Code Red
+314,TS-3,Mavericks
+315,TS-3,DebugPixel
+316,TS-3,CloudVision

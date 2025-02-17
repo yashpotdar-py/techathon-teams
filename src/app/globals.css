@@ -5,18 +5,18 @@
 
 /* Root variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary-color: #0070f3;
-  --secondary-color: #ff5874;
+  --background: #121212;
+  --foreground: #e0e0e0;
+  --primary-color: #1e88e5;
+  --secondary-color: #e53935;
   --cell-size: 150px; /* Default cell size */
   --grid-size: 1; /* Default grid size */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212;
+    --foreground: #e0e0e0;
   }
 }
 
@@ -48,17 +48,22 @@ h1 {
 }
 
 form {
-  background: var(--background);
+  background: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s;
+}
+
+form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 label {
   display: block;
   font-size: 1rem;
   margin-bottom: 5px;
-  color: #fff;
+  color: var(--foreground);
 }
 
 input[type="number"],
@@ -66,10 +71,19 @@ input[type="text"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #000;
+  border: 1px solid #333;
   border-radius: 4px;
   font-size: 1rem;
-  background-color: #000;
+  background-color: #2c2c2c;
+  color: var(--foreground);
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: var(--primary-color);
+  background-color: #3c3c3c;
+  outline: none;
 }
 
 button {
@@ -82,11 +96,16 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 button.deactivate {
@@ -94,7 +113,14 @@ button.deactivate {
 }
 
 button.deactivate:hover {
-  background-color: darken(var(--secondary-color), 10%);
+  background-color: #c62828;
+}
+
+.error-message {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-top: 10px;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .team-details {
@@ -116,9 +142,33 @@ button.deactivate:hover {
 }
 
 .team-details input {
-  background-color: #000;
+  background-color: #2c2c2c;
   border: none;
   color: var(--foreground);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .team-details h2 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Counter styles */
@@ -249,16 +299,16 @@ button.deactivate:hover {
 
 .grid-link {
   font-size: 1.5rem;
-  color: #0070f3;
+  color: #1e88e5;
   text-decoration: none;
   padding: 10px 20px;
-  border: 2px solid #0070f3;
+  border: 2px solid #1e88e5;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .grid-link:hover {
-  background-color: #0070f3;
+  background-color: #1e88e5;
   color: #fff;
 }
 

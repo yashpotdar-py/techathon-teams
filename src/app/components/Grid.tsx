@@ -114,6 +114,7 @@ const Grid = () => {
   const activeTeams = teams.filter((team) => team.teamState === "active");
   const gridSize = Math.ceil(Math.sqrt(activeTeams.length));
   const cellSize = Math.max(MIN_CELL_SIZE, 500 / gridSize);
+  const fontSize = cellSize * 0.9; // Calculate font size based on cell size
 
   const generateSpiralPositions = (n: number) => {
     const positions = Array.from({ length: n }, () => [0, 0]);
@@ -165,6 +166,7 @@ const Grid = () => {
             {
               "--cell-size": `${cellSize}px`,
               "--grid-size": gridSize,
+              "--font-size": `${fontSize}px`,
             } as React.CSSProperties
           }
         >
@@ -180,6 +182,7 @@ const Grid = () => {
                   spiralPositions[index][0] + Math.ceil(gridSize / 2) + 1,
                 borderColor: problemStatementColors[team.problemStatement],
                 backgroundColor: "#000",
+                fontSize: `${fontSize}px`,
               }}
             />
           ))}

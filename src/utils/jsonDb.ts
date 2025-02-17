@@ -22,6 +22,7 @@ interface Team {
   problemStatement: string;
   teamState: "active" | "inactive";
 }
+
 export async function writeTeams(teams: Team[]) {
   await fs.writeFile(dbFilePath, JSON.stringify(teams, null, 2), "utf-8");
 }

@@ -1,92 +1,2530 @@
 [
   {
+    "_id": "67aec38a73f28bd31a49742a",
     "teamNumber": 1,
-    "teamName": "Team 1",
-    "problemStatement": "DM-2",
+    "teamName": "Our Highness",
+    "teamImage": "",
+    "problemStatement": "AS-1",
     "teamState": "active"
   },
   {
+    "_id": "67aec47273f28bd31a49742b",
     "teamNumber": 2,
-    "teamName": "Team 2",
-    "problemStatement": "DM-2",
+    "teamName": "Holy coders",
+    "teamImage": null,
+    "problemStatement": "AS-1",
     "teamState": "active"
   },
   {
+    "_id": "67aec8670b6a2970398c02eb",
     "teamNumber": 3,
-    "teamName": "Team 3",
-    "problemStatement": "DM-2",
+    "teamName": "YeildMax",
+    "teamImage": "",
+    "problemStatement": "AS-1",
     "teamState": "active"
   },
   {
+    "_id": "67aee798b2d366bef3b469eb",
     "teamNumber": 4,
-    "teamName": "Team 4",
-    "problemStatement": "DM-2",
+    "teamName": "Team Innovators",
+    "teamImage": null,
+    "problemStatement": "AS-1",
     "teamState": "active"
   },
   {
+    "_id": "67aee7b3b2d366bef3b469ec",
     "teamNumber": 5,
-    "teamName": "Team 5",
-    "problemStatement": "DM-2",
+    "teamName": "Tech Mavericks",
+    "teamImage": null,
+    "problemStatement": "AS-1",
     "teamState": "active"
   },
   {
+    "_id": "67aee7ddb2d366bef3b469ed",
     "teamNumber": 6,
-    "teamName": "Team 6",
-    "problemStatement": "DM-2",
+    "teamName": "Team innovators",
+    "teamImage": null,
+    "problemStatement": "AS-1",
     "teamState": "active"
   },
   {
+    "_id": "67aeedf4b2d366bef3b469ee",
     "teamNumber": 7,
-    "teamName": "Team 7",
-    "problemStatement": "DM-2",
+    "teamName": "Kinesis",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d0b12745350ad2efb39",
     "teamNumber": 8,
-    "teamName": "Team 8",
-    "problemStatement": "DM-2",
+    "teamName": "Vishwakarma United Developers",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d0c12745350ad2efb3a",
     "teamNumber": 9,
-    "teamName": "Team 9",
-    "problemStatement": "DM-2",
+    "teamName": "ZeroPoint8",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d0d12745350ad2efb3b",
     "teamNumber": 10,
-    "teamName": "Team 10",
-    "problemStatement": "DM-2",
+    "teamName": "Quantum Coders",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d0e12745350ad2efb3c",
     "teamNumber": 11,
-    "teamName": "Team 11",
-    "problemStatement": "DM-2",
+    "teamName": "Team Eklavya",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d1012745350ad2efb3d",
     "teamNumber": 12,
-    "teamName": "Team 12",
-    "problemStatement": "DM-2",
+    "teamName": "ENCORE",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d1112745350ad2efb3e",
     "teamNumber": 13,
-    "teamName": "Team 13",
-    "problemStatement": "DM-2",
+    "teamName": "Drushtikon",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d1212745350ad2efb3f",
     "teamNumber": 14,
-    "teamName": "Team 14",
-    "problemStatement": "DM-2",
+    "teamName": "Binary Bandits25",
+    "teamImage": null,
+    "problemStatement": "AS-2",
     "teamState": "active"
   },
   {
+    "_id": "67af2d1312745350ad2efb40",
     "teamNumber": 15,
-    "teamName": "Team 15",
-    "problemStatement": "DM-2",
+    "teamName": "AgriDirect",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1412745350ad2efb41",
+    "teamNumber": 16,
+    "teamName": "Neural Ninjas",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1512745350ad2efb42",
+    "teamNumber": 17,
+    "teamName": "Team farmIQ",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1612745350ad2efb43",
+    "teamNumber": 18,
+    "teamName": "CodeVerse Innovators",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1712745350ad2efb44",
+    "teamNumber": 19,
+    "teamName": "The Fantastic Four",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1812745350ad2efb45",
+    "teamNumber": 20,
+    "teamName": "FarmX",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1912745350ad2efb46",
+    "teamNumber": 21,
+    "teamName": "Hacknova",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1a12745350ad2efb47",
+    "teamNumber": 22,
+    "teamName": "CodeSmithsSDKR",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1b12745350ad2efb48",
+    "teamNumber": 23,
+    "teamName": "The Alphites",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1c12745350ad2efb49",
+    "teamNumber": 24,
+    "teamName": "Demolition Boys",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1d12745350ad2efb4a",
+    "teamNumber": 25,
+    "teamName": "Gaia",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1e12745350ad2efb4b",
+    "teamNumber": 26,
+    "teamName": "CBZ",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d1f12745350ad2efb4c",
+    "teamNumber": 27,
+    "teamName": "FarmSaviour",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2512745350ad2efb4d",
+    "teamNumber": 28,
+    "teamName": "ByteSync",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2612745350ad2efb4e",
+    "teamNumber": 29,
+    "teamName": "Team FieldInsight",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2712745350ad2efb4f",
+    "teamNumber": 30,
+    "teamName": "DashCoders",
+    "teamImage": null,
+    "problemStatement": "AS-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2812745350ad2efb50",
+    "teamNumber": 31,
+    "teamName": "127.0.0.1",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2912745350ad2efb51",
+    "teamNumber": 32,
+    "teamName": "Digital farmer",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2a12745350ad2efb52",
+    "teamNumber": 33,
+    "teamName": "KrishiConnect",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2b12745350ad2efb53",
+    "teamNumber": 34,
+    "teamName": "Toxic",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2c12745350ad2efb54",
+    "teamNumber": 35,
+    "teamName": "Team CTRL+ALT+Defeat",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2d12745350ad2efb55",
+    "teamNumber": 36,
+    "teamName": "Sapiens",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2e12745350ad2efb56",
+    "teamNumber": 37,
+    "teamName": "GreenWave",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d2f12745350ad2efb57",
+    "teamNumber": 38,
+    "teamName": "Loop breakers",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3012745350ad2efb58",
+    "teamNumber": 39,
+    "teamName": "Vidyut",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3112745350ad2efb59",
+    "teamNumber": 40,
+    "teamName": "Glitch Fixers",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3212745350ad2efb5a",
+    "teamNumber": 41,
+    "teamName": "PESHWA",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3412745350ad2efb5b",
+    "teamNumber": 42,
+    "teamName": "RockFusion",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3512745350ad2efb5c",
+    "teamNumber": 43,
+    "teamName": "Tech blaster",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3612745350ad2efb5d",
+    "teamNumber": 44,
+    "teamName": "Syntax Squad",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3712745350ad2efb5e",
+    "teamNumber": 45,
+    "teamName": "Build Intellect",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3812745350ad2efb5f",
+    "teamNumber": 46,
+    "teamName": "innoverse",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3912745350ad2efb60",
+    "teamNumber": 47,
+    "teamName": "Server Squad",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3a12745350ad2efb61",
+    "teamNumber": 48,
+    "teamName": "code crafters",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3b12745350ad2efb62",
+    "teamNumber": 49,
+    "teamName": "Green Gaurdians",
+    "teamImage": null,
+    "problemStatement": "AS-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3c12745350ad2efb63",
+    "teamNumber": 50,
+    "teamName": "Error404",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3d12745350ad2efb64",
+    "teamNumber": 51,
+    "teamName": "AgroEngineers",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3e12745350ad2efb65",
+    "teamNumber": 52,
+    "teamName": "GreenVisionX",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d3f12745350ad2efb66",
+    "teamNumber": 53,
+    "teamName": "Agrivate",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4012745350ad2efb67",
+    "teamNumber": 54,
+    "teamName": "Sonic Coders",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4112745350ad2efb68",
+    "teamNumber": 55,
+    "teamName": "Tech Busters",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4212745350ad2efb69",
+    "teamNumber": 56,
+    "teamName": "Karnaayudh",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4312745350ad2efb6a",
+    "teamNumber": 57,
+    "teamName": "The Vedas",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4412745350ad2efb6b",
+    "teamNumber": 58,
+    "teamName": "Brave Fusion",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4512745350ad2efb6c",
+    "teamNumber": 59,
+    "teamName": "MRITYUNJAY",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4612745350ad2efb6d",
+    "teamNumber": 60,
+    "teamName": "Pookies🎀",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4712745350ad2efb6e",
+    "teamNumber": 61,
+    "teamName": "Hack_Hustlers",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4812745350ad2efb6f",
+    "teamNumber": 62,
+    "teamName": "TEAM SPYE",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4912745350ad2efb70",
+    "teamNumber": 63,
+    "teamName": "Unnati Agritech",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4a12745350ad2efb71",
+    "teamNumber": 64,
+    "teamName": "Green Thumbs",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4b12745350ad2efb72",
+    "teamNumber": 65,
+    "teamName": "Team AGRIV",
+    "teamImage": null,
+    "problemStatement": "AS-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4c12745350ad2efb73",
+    "teamNumber": 66,
+    "teamName": "DarkSide",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4d12745350ad2efb74",
+    "teamNumber": 67,
+    "teamName": "Status 200",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4e12745350ad2efb75",
+    "teamNumber": 68,
+    "teamName": "Team Sunflower",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d4f12745350ad2efb76",
+    "teamNumber": 69,
+    "teamName": "Neural Ninjas",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5012745350ad2efb77",
+    "teamNumber": 70,
+    "teamName": "ResQ",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5112745350ad2efb78",
+    "teamNumber": 71,
+    "teamName": "Blunder Biryani",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5212745350ad2efb79",
+    "teamNumber": 72,
+    "teamName": "Binary Brains",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5312745350ad2efb7a",
+    "teamNumber": 73,
+    "teamName": "404 Found",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5412745350ad2efb7b",
+    "teamNumber": 74,
+    "teamName": "Glitch Sena",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5512745350ad2efb7c",
+    "teamNumber": 75,
+    "teamName": "NextGen Minds",
+    "teamImage": null,
+    "problemStatement": "DM-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5612745350ad2efb7d",
+    "teamNumber": 76,
+    "teamName": "Falcons",
+    "teamImage": null,
+    "problemStatement": "DM-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5812745350ad2efb7e",
+    "teamNumber": 77,
+    "teamName": "Alpha_Tribe",
+    "teamImage": null,
+    "problemStatement": "DM-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5912745350ad2efb7f",
+    "teamNumber": 78,
+    "teamName": "Syntax Terrors",
+    "teamImage": null,
+    "problemStatement": "DM-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5a12745350ad2efb80",
+    "teamNumber": 79,
+    "teamName": "Circuit Drifters",
+    "teamImage": null,
+    "problemStatement": "EN-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5b12745350ad2efb81",
+    "teamNumber": 80,
+    "teamName": "MECHANICAL",
+    "teamImage": null,
+    "problemStatement": "EN-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5c12745350ad2efb82",
+    "teamNumber": 81,
+    "teamName": "CODE HUNTERS",
+    "teamImage": null,
+    "problemStatement": "EN-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5d12745350ad2efb83",
+    "teamNumber": 82,
+    "teamName": "HydroVision",
+    "teamImage": null,
+    "problemStatement": "EN-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5e12745350ad2efb84",
+    "teamNumber": 83,
+    "teamName": "SJA",
+    "teamImage": null,
+    "problemStatement": "EN-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d5f12745350ad2efb85",
+    "teamNumber": 84,
+    "teamName": "Jal Janardhan",
+    "teamImage": null,
+    "problemStatement": "EN-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6012745350ad2efb86",
+    "teamNumber": 85,
+    "teamName": "Team AlgoKnights-2",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6112745350ad2efb87",
+    "teamNumber": 86,
+    "teamName": "Valorants",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6212745350ad2efb88",
+    "teamNumber": 87,
+    "teamName": "Technoverse",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6312745350ad2efb89",
+    "teamNumber": 88,
+    "teamName": "Rootify",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6412745350ad2efb8a",
+    "teamNumber": 89,
+    "teamName": "Invictus",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6512745350ad2efb8b",
+    "teamNumber": 90,
+    "teamName": "Error Terminators",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6612745350ad2efb8c",
+    "teamNumber": 91,
+    "teamName": "FloraSync",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6712745350ad2efb8d",
+    "teamNumber": 92,
+    "teamName": "InnoVibe",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6812745350ad2efb8e",
+    "teamNumber": 93,
+    "teamName": "RingZer0s",
+    "teamImage": null,
+    "problemStatement": "EN-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6912745350ad2efb8f",
+    "teamNumber": 94,
+    "teamName": "FoodBridges",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6a12745350ad2efb90",
+    "teamNumber": 95,
+    "teamName": "Error404",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6b12745350ad2efb91",
+    "teamNumber": 96,
+    "teamName": "Vector Squad",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6c12745350ad2efb92",
+    "teamNumber": 97,
+    "teamName": "Visionary Ventures",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6d12745350ad2efb93",
+    "teamNumber": 98,
+    "teamName": "HackXplore",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6e12745350ad2efb94",
+    "teamNumber": 99,
+    "teamName": "The Codebreakers",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d6f12745350ad2efb95",
+    "teamNumber": 100,
+    "teamName": "Recursia",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7012745350ad2efb96",
+    "teamNumber": 101,
+    "teamName": "404 Found",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7112745350ad2efb97",
+    "teamNumber": 102,
+    "teamName": "Error 404",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7212745350ad2efb98",
+    "teamNumber": 103,
+    "teamName": "Console.log(\"Win\")",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7312745350ad2efb99",
+    "teamNumber": 104,
+    "teamName": "Nova",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7412745350ad2efb9a",
+    "teamNumber": 105,
+    "teamName": "Beginner's 🔰",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7512745350ad2efb9b",
+    "teamNumber": 106,
+    "teamName": "B1nary_B0ts",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7612745350ad2efb9c",
+    "teamNumber": 107,
+    "teamName": "Team Edgerunners",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7812745350ad2efb9d",
+    "teamNumber": 108,
+    "teamName": "Sudarshana",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7912745350ad2efb9e",
+    "teamNumber": 109,
+    "teamName": "Food Codex Crew",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7a12745350ad2efb9f",
+    "teamNumber": 110,
+    "teamName": "Byte4Bites",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7b12745350ad2efba0",
+    "teamNumber": 111,
+    "teamName": "Tech Cartel",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7c12745350ad2efba1",
+    "teamNumber": 112,
+    "teamName": "CodeVerse Infinix",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7d12745350ad2efba2",
+    "teamNumber": 113,
+    "teamName": "Runtime Terrors",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7e12745350ad2efba3",
+    "teamNumber": 114,
+    "teamName": "Team Code-Blooded",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d7f12745350ad2efba4",
+    "teamNumber": 115,
+    "teamName": "Code Crushers",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8012745350ad2efba5",
+    "teamNumber": 116,
+    "teamName": "Bit Coders",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8112745350ad2efba6",
+    "teamNumber": 117,
+    "teamName": "HackElite",
+    "teamImage": null,
+    "problemStatement": "EN-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8212745350ad2efba7",
+    "teamNumber": 118,
+    "teamName": "Team S3: Sustainable Solutions Squad",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8312745350ad2efba8",
+    "teamNumber": 119,
+    "teamName": "RecycleOS",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8412745350ad2efba9",
+    "teamNumber": 120,
+    "teamName": "CodeVerse Ninjas",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8512745350ad2efbaa",
+    "teamNumber": 121,
+    "teamName": "E-connect",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8612745350ad2efbab",
+    "teamNumber": 122,
+    "teamName": "Green Bytes",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8712745350ad2efbac",
+    "teamNumber": 123,
+    "teamName": "AIRIT",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8812745350ad2efbad",
+    "teamNumber": 124,
+    "teamName": "GRYFFINDOR",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8912745350ad2efbae",
+    "teamNumber": 125,
+    "teamName": "Vigilantes",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8a12745350ad2efbaf",
+    "teamNumber": 126,
+    "teamName": "The Hackonauts",
+    "teamImage": null,
+    "problemStatement": "EN-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8b12745350ad2efbb0",
+    "teamNumber": 127,
+    "teamName": "ByteSized",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8c12745350ad2efbb1",
+    "teamNumber": 128,
+    "teamName": "Coded Chaos",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8d12745350ad2efbb2",
+    "teamNumber": 129,
+    "teamName": "CodeXtreme",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8e12745350ad2efbb3",
+    "teamNumber": 130,
+    "teamName": "Bash Farmers",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d8f12745350ad2efbb4",
+    "teamNumber": 131,
+    "teamName": "The Bug Busters",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9012745350ad2efbb5",
+    "teamNumber": 132,
+    "teamName": "Code Crew",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9112745350ad2efbb6",
+    "teamNumber": 133,
+    "teamName": "TECHKNIGHTS-A",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9312745350ad2efbb7",
+    "teamNumber": 134,
+    "teamName": "TechBro",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9412745350ad2efbb8",
+    "teamNumber": 135,
+    "teamName": "BYTE BANDITS",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9512745350ad2efbb9",
+    "teamNumber": 136,
+    "teamName": "CodeForCare",
+    "teamImage": null,
+    "problemStatement": "ET-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9612745350ad2efbba",
+    "teamNumber": 137,
+    "teamName": "SVIT Titans",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9712745350ad2efbbb",
+    "teamNumber": 138,
+    "teamName": "Logic Legends",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9812745350ad2efbbc",
+    "teamNumber": 139,
+    "teamName": "Garuda",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9912745350ad2efbbd",
+    "teamNumber": 140,
+    "teamName": "Cerberus",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9a12745350ad2efbbe",
+    "teamNumber": 141,
+    "teamName": "Quibits",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9b12745350ad2efbbf",
+    "teamNumber": 142,
+    "teamName": "CharChatur",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9c12745350ad2efbc0",
+    "teamNumber": 143,
+    "teamName": "MeghaEvisipro",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9d12745350ad2efbc1",
+    "teamNumber": 144,
+    "teamName": "Cipher Squad",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9e12745350ad2efbc2",
+    "teamNumber": 145,
+    "teamName": "Team Catalyst",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2d9f12745350ad2efbc3",
+    "teamNumber": 146,
+    "teamName": "Rush Hour Ninjas",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2da012745350ad2efbc4",
+    "teamNumber": 147,
+    "teamName": "Vision Squad",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2da112745350ad2efbc5",
+    "teamNumber": 148,
+    "teamName": "Git Good",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2da312745350ad2efbc6",
+    "teamNumber": 149,
+    "teamName": "The Debuggers",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2da412745350ad2efbc7",
+    "teamNumber": 150,
+    "teamName": "Team HASH",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2da612745350ad2efbc8",
+    "teamNumber": 151,
+    "teamName": "Matrix Miners",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2da812745350ad2efbc9",
+    "teamNumber": 152,
+    "teamName": "NotCoders",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2da912745350ad2efbca",
+    "teamNumber": 153,
+    "teamName": "StarTrek",
+    "teamImage": null,
+    "problemStatement": "ET-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dab12745350ad2efbcb",
+    "teamNumber": 154,
+    "teamName": "Code Blooded",
+    "teamImage": null,
+    "problemStatement": "ET-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dac12745350ad2efbcc",
+    "teamNumber": 155,
+    "teamName": "CodePAC",
+    "teamImage": null,
+    "problemStatement": "ET-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dad12745350ad2efbcd",
+    "teamNumber": 156,
+    "teamName": "NEMESIS PRIME",
+    "teamImage": null,
+    "problemStatement": "ET-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dae12745350ad2efbce",
+    "teamNumber": 157,
+    "teamName": "InsightVisioner",
+    "teamImage": null,
+    "problemStatement": "ET-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2daf12745350ad2efbcf",
+    "teamNumber": 158,
+    "teamName": "AMPLIFY",
+    "teamImage": null,
+    "problemStatement": "ET-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db012745350ad2efbd0",
+    "teamNumber": 159,
+    "teamName": "AsyncAwait",
+    "teamImage": null,
+    "problemStatement": "ET-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db112745350ad2efbd1",
+    "teamNumber": 160,
+    "teamName": "Localhost3000",
+    "teamImage": null,
+    "problemStatement": "ET-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db212745350ad2efbd2",
+    "teamNumber": 161,
+    "teamName": "Overclockers",
+    "teamImage": null,
+    "problemStatement": "ET-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db312745350ad2efbd3",
+    "teamNumber": 162,
+    "teamName": "The Codefathers",
+    "teamImage": null,
+    "problemStatement": "ET-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db412745350ad2efbd4",
+    "teamNumber": 163,
+    "teamName": "Bug Busterz",
+    "teamImage": null,
+    "problemStatement": "ET-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db512745350ad2efbd5",
+    "teamNumber": 164,
+    "teamName": "DeepShip",
+    "teamImage": null,
+    "problemStatement": "ET-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db612745350ad2efbd6",
+    "teamNumber": 165,
+    "teamName": "Genzopia",
+    "teamImage": null,
+    "problemStatement": "ET-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db712745350ad2efbd7",
+    "teamNumber": 166,
+    "teamName": "Code Sprinters",
+    "teamImage": null,
+    "problemStatement": "ET-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db812745350ad2efbd8",
+    "teamNumber": 167,
+    "teamName": "THE ETERNALS",
+    "teamImage": null,
+    "problemStatement": "ET-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2db912745350ad2efbd9",
+    "teamNumber": 168,
+    "teamName": "TechBit",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dba12745350ad2efbda",
+    "teamNumber": 169,
+    "teamName": "Binary Brains",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dbb12745350ad2efbdb",
+    "teamNumber": 170,
+    "teamName": "Hypertext",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dbc12745350ad2efbdc",
+    "teamNumber": 171,
+    "teamName": "Spark Ignitors",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dbd12745350ad2efbdd",
+    "teamNumber": 172,
+    "teamName": "Mindmatters",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dbe12745350ad2efbde",
+    "teamNumber": 173,
+    "teamName": "Mind Map cache",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dbf12745350ad2efbdf",
+    "teamNumber": 174,
+    "teamName": "MetaMinds",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc012745350ad2efbe0",
+    "teamNumber": 175,
+    "teamName": "Neural Navigators",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc112745350ad2efbe1",
+    "teamNumber": 176,
+    "teamName": "NeuroGuardian",
+    "teamImage": null,
+    "problemStatement": "HC-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc312745350ad2efbe2",
+    "teamNumber": 177,
+    "teamName": "RAKSHAK",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc412745350ad2efbe3",
+    "teamNumber": 178,
+    "teamName": "CodeCrafters",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc512745350ad2efbe4",
+    "teamNumber": 179,
+    "teamName": "Nerdy Ninjas",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc612745350ad2efbe5",
+    "teamNumber": 180,
+    "teamName": "Code'nCure",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc712745350ad2efbe6",
+    "teamNumber": 181,
+    "teamName": "idea.exe",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc812745350ad2efbe7",
+    "teamNumber": 182,
+    "teamName": "United-13",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dc912745350ad2efbe8",
+    "teamNumber": 183,
+    "teamName": "Error_404",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dca12745350ad2efbe9",
+    "teamNumber": 184,
+    "teamName": "402",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dcb12745350ad2efbea",
+    "teamNumber": 185,
+    "teamName": "TASK",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dcc12745350ad2efbeb",
+    "teamNumber": 186,
+    "teamName": "Mavericks",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dcd12745350ad2efbec",
+    "teamNumber": 187,
+    "teamName": "Blue",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dce12745350ad2efbed",
+    "teamNumber": 188,
+    "teamName": "SyntaxSquad",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dcf12745350ad2efbee",
+    "teamNumber": 189,
+    "teamName": "The Kaizens",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd012745350ad2efbef",
+    "teamNumber": 190,
+    "teamName": "Razorflames",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd112745350ad2efbf0",
+    "teamNumber": 191,
+    "teamName": "Team SATY",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd212745350ad2efbf1",
+    "teamNumber": 192,
+    "teamName": "CareCatalysts",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd312745350ad2efbf2",
+    "teamNumber": 193,
+    "teamName": "Code Hustlers",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd412745350ad2efbf3",
+    "teamNumber": 194,
+    "teamName": "404",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd512745350ad2efbf4",
+    "teamNumber": 195,
+    "teamName": "Sprouting Innovators",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd612745350ad2efbf5",
+    "teamNumber": 196,
+    "teamName": "Team_X",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd712745350ad2efbf6",
+    "teamNumber": 197,
+    "teamName": "Sentinels",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd812745350ad2efbf7",
+    "teamNumber": 198,
+    "teamName": "Team Sentinel",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dd912745350ad2efbf8",
+    "teamNumber": 199,
+    "teamName": "Code Innovators",
+    "teamImage": null,
+    "problemStatement": "HC-2",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dda12745350ad2efbf9",
+    "teamNumber": 200,
+    "teamName": "Binary Bandhu",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2ddb12745350ad2efbfa",
+    "teamNumber": 201,
+    "teamName": "EasyAI-HealthCheck",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2ddc12745350ad2efbfb",
+    "teamNumber": 202,
+    "teamName": "The Spark Squad",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2ddd12745350ad2efbfc",
+    "teamNumber": 203,
+    "teamName": "Cipher Falcons",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2ddf12745350ad2efbfd",
+    "teamNumber": 204,
+    "teamName": "MediTech",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de012745350ad2efbfe",
+    "teamNumber": 205,
+    "teamName": "Tech Innovators",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de112745350ad2efbff",
+    "teamNumber": 206,
+    "teamName": "AI Dominators",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de212745350ad2efc00",
+    "teamNumber": 207,
+    "teamName": "The Four-O-Fours",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de312745350ad2efc01",
+    "teamNumber": 208,
+    "teamName": "Code-Crafters",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de412745350ad2efc02",
+    "teamNumber": 209,
+    "teamName": "ElectroSync",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de512745350ad2efc03",
+    "teamNumber": 210,
+    "teamName": "Smartsynergy",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de612745350ad2efc04",
+    "teamNumber": 211,
+    "teamName": "Echelon",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de712745350ad2efc05",
+    "teamNumber": 212,
+    "teamName": "Web Weavers",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de812745350ad2efc06",
+    "teamNumber": 213,
+    "teamName": "Cipherix",
+    "teamImage": null,
+    "problemStatement": "HC-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2de912745350ad2efc07",
+    "teamNumber": 214,
+    "teamName": "Martians",
+    "teamImage": null,
+    "problemStatement": "HC-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dea12745350ad2efc08",
+    "teamNumber": 215,
+    "teamName": "Seeking Sponsors",
+    "teamImage": null,
+    "problemStatement": "HC-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2deb12745350ad2efc09",
+    "teamNumber": 216,
+    "teamName": "Gustakh Boys",
+    "teamImage": null,
+    "problemStatement": "HC-4",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dec12745350ad2efc0a",
+    "teamNumber": 217,
+    "teamName": "Error 404",
+    "teamImage": null,
+    "problemStatement": "HC-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2ded12745350ad2efc0b",
+    "teamNumber": 218,
+    "teamName": "ByteMe",
+    "teamImage": null,
+    "problemStatement": "HC-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dee12745350ad2efc0c",
+    "teamNumber": 219,
+    "teamName": "Sostegno Squad",
+    "teamImage": null,
+    "problemStatement": "HC-5",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2def12745350ad2efc0d",
+    "teamNumber": 220,
+    "teamName": "DeepQuest",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df012745350ad2efc0e",
+    "teamNumber": 221,
+    "teamName": "SunVibe",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df112745350ad2efc0f",
+    "teamNumber": 222,
+    "teamName": "Park Pilot",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df212745350ad2efc10",
+    "teamNumber": 223,
+    "teamName": "Dreamer",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df312745350ad2efc11",
+    "teamNumber": 224,
+    "teamName": "Team Arc",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df412745350ad2efc12",
+    "teamNumber": 225,
+    "teamName": "CodeNova",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df512745350ad2efc13",
+    "teamNumber": 226,
+    "teamName": "Team Redox",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df612745350ad2efc14",
+    "teamNumber": 227,
+    "teamName": "DevCultivators",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df712745350ad2efc15",
+    "teamNumber": 228,
+    "teamName": "Abhimanyu Solutions",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2df812745350ad2efc16",
+    "teamNumber": 229,
+    "teamName": "LumpXtract Solutions",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dfa12745350ad2efc17",
+    "teamNumber": 230,
+    "teamName": "Chanakya",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dfb12745350ad2efc18",
+    "teamNumber": 231,
+    "teamName": "Tensor Titans",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dfc12745350ad2efc19",
+    "teamNumber": 232,
+    "teamName": "ParkWise",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dfd12745350ad2efc1a",
+    "teamNumber": 233,
+    "teamName": "Aditya",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dfe12745350ad2efc1b",
+    "teamNumber": 234,
+    "teamName": "Team Semicons",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2dff12745350ad2efc1c",
+    "teamNumber": 235,
+    "teamName": "DeepMind",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0012745350ad2efc1d",
+    "teamNumber": 236,
+    "teamName": "ByteTech",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0112745350ad2efc1e",
+    "teamNumber": 237,
+    "teamName": "Pharmatronics",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0212745350ad2efc1f",
+    "teamNumber": 238,
+    "teamName": "NeoGrid",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0312745350ad2efc20",
+    "teamNumber": 239,
+    "teamName": "Clueless Coders",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0412745350ad2efc21",
+    "teamNumber": 240,
+    "teamName": "Aarvya",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0512745350ad2efc22",
+    "teamNumber": 241,
+    "teamName": "Flauris skincare",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0612745350ad2efc23",
+    "teamNumber": 242,
+    "teamName": "\"Eco-Larv Solutions\"",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0712745350ad2efc24",
+    "teamNumber": 243,
+    "teamName": "Neuroglide",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0812745350ad2efc25",
+    "teamNumber": 244,
+    "teamName": "Kaizen",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0912745350ad2efc26",
+    "teamNumber": 245,
+    "teamName": "Pair-o-dox",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0a12745350ad2efc27",
+    "teamNumber": 246,
+    "teamName": "Electrical innovators",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0b12745350ad2efc28",
+    "teamNumber": 247,
+    "teamName": "AVINYA",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0d12745350ad2efc29",
+    "teamNumber": 248,
+    "teamName": "RecipeGenius",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0e12745350ad2efc2a",
+    "teamNumber": 249,
+    "teamName": "AgriTech",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e0f12745350ad2efc2b",
+    "teamNumber": 250,
+    "teamName": "THINKERS",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1012745350ad2efc2c",
+    "teamNumber": 251,
+    "teamName": "CrazyCoders",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1112745350ad2efc2d",
+    "teamNumber": 252,
+    "teamName": "Team AlgoKnights",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1212745350ad2efc2e",
+    "teamNumber": 253,
+    "teamName": "Team Curiosity",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1312745350ad2efc2f",
+    "teamNumber": 254,
+    "teamName": "Saksham",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1412745350ad2efc30",
+    "teamNumber": 255,
+    "teamName": "CLARASTAT",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1512745350ad2efc31",
+    "teamNumber": 256,
+    "teamName": "Code Snatchers",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1612745350ad2efc32",
+    "teamNumber": 257,
+    "teamName": "HEALOBETIC",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1712745350ad2efc33",
+    "teamNumber": 258,
+    "teamName": "Arjuna",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1812745350ad2efc34",
+    "teamNumber": 259,
+    "teamName": "CodeSphere",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1912745350ad2efc35",
+    "teamNumber": 260,
+    "teamName": "Newbie Technovators",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1a12745350ad2efc36",
+    "teamNumber": 261,
+    "teamName": "BIOPLASTIC",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1b12745350ad2efc37",
+    "teamNumber": 262,
+    "teamName": "Team Byte",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1c12745350ad2efc38",
+    "teamNumber": 263,
+    "teamName": "Algorithm Assassins",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1d12745350ad2efc39",
+    "teamNumber": 264,
+    "teamName": "CodeBros",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1e12745350ad2efc3a",
+    "teamNumber": 265,
+    "teamName": "Code crafters",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e1f12745350ad2efc3b",
+    "teamNumber": 266,
+    "teamName": "AlgoStrikers",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2012745350ad2efc3c",
+    "teamNumber": 267,
+    "teamName": "NeuralBytes",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2112745350ad2efc3d",
+    "teamNumber": 268,
+    "teamName": "Tech Owls",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2212745350ad2efc3e",
+    "teamNumber": 269,
+    "teamName": "VedHydra",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2312745350ad2efc3f",
+    "teamNumber": 270,
+    "teamName": "Team TASM.H",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2412745350ad2efc40",
+    "teamNumber": 271,
+    "teamName": "Stunners",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2612745350ad2efc41",
+    "teamNumber": 272,
+    "teamName": "CivicSphere",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2712745350ad2efc42",
+    "teamNumber": 273,
+    "teamName": "JeevanX",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2812745350ad2efc43",
+    "teamNumber": 274,
+    "teamName": "Beta",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2912745350ad2efc44",
+    "teamNumber": 275,
+    "teamName": "EduSphere",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2a12745350ad2efc45",
+    "teamNumber": 276,
+    "teamName": "Aquadrove",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2b12745350ad2efc46",
+    "teamNumber": 277,
+    "teamName": "CodeX",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2c12745350ad2efc47",
+    "teamNumber": 278,
+    "teamName": "Neural Ninjas",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2d12745350ad2efc48",
+    "teamNumber": 279,
+    "teamName": "Renegan",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2e12745350ad2efc49",
+    "teamNumber": 280,
+    "teamName": "Nexus3",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e2f12745350ad2efc4a",
+    "teamNumber": 281,
+    "teamName": "SignSpeak",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3012745350ad2efc4b",
+    "teamNumber": 282,
+    "teamName": "Kaizen",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3112745350ad2efc4c",
+    "teamNumber": 283,
+    "teamName": "AgriVision Innovators",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3212745350ad2efc4d",
+    "teamNumber": 284,
+    "teamName": "They not like us",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3312745350ad2efc4e",
+    "teamNumber": 285,
+    "teamName": "Mini Coders",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3412745350ad2efc4f",
+    "teamNumber": 286,
+    "teamName": "Taskers",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3512745350ad2efc50",
+    "teamNumber": 287,
+    "teamName": "Code Neuralists",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3612745350ad2efc51",
+    "teamNumber": 288,
+    "teamName": "team Wurkify",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3712745350ad2efc52",
+    "teamNumber": 289,
+    "teamName": "MMIT Innov8ors",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3812745350ad2efc53",
+    "teamNumber": 290,
+    "teamName": "Void Hackers",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3912745350ad2efc54",
+    "teamNumber": 291,
+    "teamName": "Bug hunters",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3a12745350ad2efc55",
+    "teamNumber": 292,
+    "teamName": "Team Abhimanyu",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3b12745350ad2efc56",
+    "teamNumber": 293,
+    "teamName": "404 Legends",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3c12745350ad2efc57",
+    "teamNumber": 294,
+    "teamName": "Loop Lord's",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3d12745350ad2efc58",
+    "teamNumber": 295,
+    "teamName": "Algo Voyagers",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e3f12745350ad2efc59",
+    "teamNumber": 296,
+    "teamName": "Event horizon",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4012745350ad2efc5a",
+    "teamNumber": 297,
+    "teamName": "TECHKNIGHTS-B",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4112745350ad2efc5b",
+    "teamNumber": 298,
+    "teamName": "Codefleet",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4212745350ad2efc5c",
+    "teamNumber": 299,
+    "teamName": "Syntax_Error",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4312745350ad2efc5d",
+    "teamNumber": 300,
+    "teamName": "HIVE",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4412745350ad2efc5e",
+    "teamNumber": 301,
+    "teamName": "PowerPulse",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4512745350ad2efc5f",
+    "teamNumber": 302,
+    "teamName": "Animo",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4612745350ad2efc60",
+    "teamNumber": 303,
+    "teamName": "Logical Coders",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4712745350ad2efc61",
+    "teamNumber": 304,
+    "teamName": "Ease it",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4812745350ad2efc62",
+    "teamNumber": 305,
+    "teamName": "Team RoadSense",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4912745350ad2efc63",
+    "teamNumber": 306,
+    "teamName": "ECOHYDRATE",
+    "teamImage": null,
+    "problemStatement": "SI-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4a12745350ad2efc64",
+    "teamNumber": 307,
+    "teamName": "Neural Nexus",
+    "teamImage": null,
+    "problemStatement": "TS-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4b12745350ad2efc65",
+    "teamNumber": 308,
+    "teamName": "SQUADX",
+    "teamImage": null,
+    "problemStatement": "TS-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4c12745350ad2efc66",
+    "teamNumber": 309,
+    "teamName": "HashBytes",
+    "teamImage": null,
+    "problemStatement": "TS-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4d12745350ad2efc67",
+    "teamNumber": 310,
+    "teamName": "Team Rectifer",
+    "teamImage": null,
+    "problemStatement": "TS-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4e12745350ad2efc68",
+    "teamNumber": 311,
+    "teamName": "Tech Wolves",
+    "teamImage": null,
+    "problemStatement": "TS-1",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e4f12745350ad2efc69",
+    "teamNumber": 312,
+    "teamName": "Confluence",
+    "teamImage": null,
+    "problemStatement": "TS-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e5012745350ad2efc6a",
+    "teamNumber": 313,
+    "teamName": "Code Red",
+    "teamImage": null,
+    "problemStatement": "TS-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e5112745350ad2efc6b",
+    "teamNumber": 314,
+    "teamName": "Mavericks",
+    "teamImage": null,
+    "problemStatement": "TS-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e5312745350ad2efc6c",
+    "teamNumber": 315,
+    "teamName": "DebugPixel",
+    "teamImage": null,
+    "problemStatement": "TS-3",
+    "teamState": "active"
+  },
+  {
+    "_id": "67af2e5412745350ad2efc6d",
+    "teamNumber": 316,
+    "teamName": "CloudVision",
+    "teamImage": null,
+    "problemStatement": "TS-3",
     "teamState": "active"
   }
 ]
