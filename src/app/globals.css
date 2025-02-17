@@ -7,6 +7,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #0070f3;
+  --secondary-color: #ff5874;
   --cell-size: 150px; /* Default cell size */
   --grid-size: 1; /* Default grid size */
 }
@@ -32,31 +34,91 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  animation: fadeIn 1s ease-in-out;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.heading-container {
-  padding: 2rem;
-  padding-bottom: 5rem;
-  animation: slideInFromLeft 1s ease-in-out;
-}
-
-/* Heading styles */
-.heading {
-  font-family: "Game Of Squids", Arial, sans-serif;
-  font-size: 8rem;
+h1 {
+  font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+form {
+  background: var(--background);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #000;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+button.deactivate {
+  background-color: var(--secondary-color);
+}
+
+button.deactivate:hover {
+  background-color: darken(var(--secondary-color), 10%);
+}
+
+.team-details {
   margin-top: 20px;
 }
 
-.heading .highlight {
-  color: rgb(255, 88, 116);
+.team-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.team-details div {
+  margin-bottom: 10px;
+}
+
+.team-details label {
+  font-weight: bold;
+}
+
+.team-details input {
+  background-color: #000;
+  border: none;
+  color: var(--foreground);
 }
 
 /* Counter styles */
@@ -78,11 +140,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background-color: #000; /* Set background color to black */
+  border: 1px solid; /* Ensure border is visible */
   border-radius: 4px;
   font-size: 1rem;
-  color: #333;
+  color: #fff;
   height: var(--cell-size);
   width: var(--cell-size);
   padding: 10px;
@@ -90,12 +152,13 @@ body {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, height 0.3s, width 0.3s,
     transform 0.3s; /* Add transitions for smooth animation */
-  animation: fadeInScaleUp 0.5s ease-in-out;
+  animation: spiralIn 0.2s ease-in-out forwards;
+  opacity: 0; /* Start with cells hidden */
 }
 
 .cell.active {
   background-color: #f0f0f0;
-  color: #333;
+  color: #fff;
   animation: fadeInScaleUp 0.5s forwards;
 }
 
@@ -143,12 +206,34 @@ body {
   }
 }
 
+/* Add keyframes for the spiral animation */
+@keyframes spiralIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.grid-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(var(--grid-size), var(--cell-size));
   grid-template-rows: repeat(var(--grid-size), var(--cell-size));
   gap: 10px;
   padding: 20px;
+  padding-top: 60px; /* Add padding at the top */
   justify-content: center; /* Center the grid horizontally */
   align-content: center; /* Center the grid vertically */
   place-items: center; /* Center the grid items */

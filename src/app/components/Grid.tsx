@@ -13,38 +13,44 @@ interface Team {
 // Define base colors for each prefix
 const baseColors: { [key: string]: string[] } = {
   AS: [
-    "hsla(210, 80%, 85%, 0.8)",
-    "hsla(215, 80%, 80%, 0.8)",
-    "hsla(220, 80%, 75%, 0.8)",
-    "hsla(225, 80%, 70%, 0.8)",
+    "hsla(180, 100%, 75%, 0.9)",
+    "hsla(180, 100%, 70%, 0.9)",
+    "hsla(180, 100%, 65%, 0.9)",
+    "hsla(180, 100%, 60%, 0.9)",
   ],
-  DM: ["hsla(140, 70%, 85%, 0.8)", "hsla(145, 70%, 80%, 0.8)"],
+  DM: [
+    "hsla(153, 100%, 80%, 0.9)",
+    "hsla(153, 100%, 75%, 0.9)"
+  ],
   EN: [
-    "hsla(30, 90%, 85%, 0.8)",
-    "hsla(32, 90%, 80%, 0.8)",
-    "hsla(34, 90%, 75%, 0.8)",
-    "hsla(36, 90%, 70%, 0.8)",
-    "hsla(38, 90%, 65%, 0.8)",
+    "hsla(127, 100%, 75%, 0.9)",
+    "hsla(127, 100%, 70%, 0.9)",
+    "hsla(127, 100%, 65%, 0.9)",
+    "hsla(127, 100%, 60%, 0.9)",
+    "hsla(127, 100%, 55%, 0.9)"
   ],
   ET: [
-    "hsla(270, 70%, 85%, 0.8)",
-    "hsla(272, 70%, 80%, 0.8)",
-    "hsla(274, 70%, 75%, 0.8)",
-    "hsla(276, 70%, 70%, 0.8)",
+    "hsla(100, 100%, 75%, 0.9)",
+    "hsla(100, 100%, 70%, 0.9)",
+    "hsla(100, 100%, 65%, 0.9)",
+    "hsla(100, 100%, 60%, 0.9)"
   ],
   HC: [
-    "hsla(180, 80%, 85%, 0.8)",
-    "hsla(182, 80%, 80%, 0.8)",
-    "hsla(184, 80%, 75%, 0.8)",
-    "hsla(186, 80%, 70%, 0.8)",
-    "hsla(188, 80%, 65%, 0.8)",
+    "hsla(73, 100%, 85%, 0.9)",
+    "hsla(73, 100%, 80%, 0.9)",
+    "hsla(73, 100%, 75%, 0.9)",
+    "hsla(73, 100%, 70%, 0.9)",
+    "hsla(73, 100%, 65%, 0.9)"
   ],
-  SI: ["hsla(200, 80%, 80%, 0.8)"],
+  SI: [
+    "hsla(47, 100%, 80%, 0.9)"
+  ],
   TS: [
-    "hsla(80, 80%, 85%, 0.8)",
-    "hsla(82, 80%, 80%, 0.8)",
-    "hsla(84, 80%, 75%, 0.8)",
+    "hsla(20, 100%, 85%, 0.9)",
+    "hsla(20, 100%, 80%, 0.9)",
+    "hsla(20, 100%, 75%, 0.9)"
   ],
+  
 };
 
 // Generate problem statement colors based on base colors
@@ -135,6 +141,13 @@ const Grid = () => {
 
   const spiralPositions = generateSpiralPositions(activeTeams.length);
 
+  useEffect(() => {
+    const cells = document.querySelectorAll(".cell");
+    cells.forEach((cell, index) => {
+      (cell as HTMLElement).style.animationDelay = `${index * 0.1}s`;
+    });
+  }, [activeTeams]);
+
   return (
     <div className="grid-page">
       <div className="counter">
@@ -165,7 +178,8 @@ const Grid = () => {
                   spiralPositions[index][1] + Math.ceil(gridSize / 2) + 1,
                 gridColumnStart:
                   spiralPositions[index][0] + Math.ceil(gridSize / 2) + 1,
-                backgroundColor: problemStatementColors[team.problemStatement],
+                borderColor: problemStatementColors[team.problemStatement],
+                backgroundColor: "#000",
               }}
             />
           ))}
