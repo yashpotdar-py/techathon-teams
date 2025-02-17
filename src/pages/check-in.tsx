@@ -29,7 +29,11 @@ const CheckIn = () => {
       setTeam(foundTeam);
       setError(null);
     } catch (err) {
-      setError(err.message);
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("An unknown error occurred");
+      }
       setTeam(null);
     }
   };
@@ -59,7 +63,11 @@ const CheckIn = () => {
         throw new Error("Team not found.");
       }
     } catch (err) {
-      setError(err.message);
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("An unknown error occurred");
+      }
     }
   };
 
