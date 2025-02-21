@@ -194,9 +194,22 @@ const Grid = () => {
   };
 
   const handleTimerStart = async () => {
+    // Reset the timer first with PUT request
+    await fetch('/api/timer', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ 
+        resetKey: 'techathon123'
+      })
+    });
+
+    // Then start the timer with POST request
     await fetch('/api/timer', {
       method: 'POST'
     });
+    
     router.push('/timer');
   };
 

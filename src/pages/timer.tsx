@@ -1,13 +1,22 @@
 // src/app/timer/page.tsx
 "use client";
 
-import { useEffect, useState } from 'react';
-import '@/app/globals.css';
+import { useEffect, useState } from "react";
+import "@/app/globals.css";
 
 export default function Timer() {
   const [showIntro, setShowIntro] = useState(true);
-  const [timeLeft, setTimeLeft] = useState("24:00:00");
+  const [timeLeft, setTimeLeft] = useState("24:00:00"); // Default full time
   const [resetKey, setResetKey] = useState("");
+
+  const formatTime = (ms: number) => {
+    const hours = Math.floor(ms / (1000 * 60 * 60));
+    const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((ms % (1000 * 60)) / 1000);
+    return `${hours.toString().padStart(2, "0")}:${minutes
+      .toString()
+      .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  };
 
   useEffect(() => {
     // Animate intro text then show timer
@@ -16,24 +25,17 @@ export default function Timer() {
     }, 4000);
 
     const startTimer = async () => {
-      const response = await fetch('/api/timer', {
-        method: 'POST'
+      const response = await fetch("/api/timer", {
+        method: "POST",
       });
       if (!response.ok) {
-        console.error('Failed to start timer');
+        console.error("Failed to start timer");
         return;
       }
     };
 
-    const formatTime = (ms: number) => {
-      const hours = Math.floor(ms / (1000 * 60 * 60));
-      const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((ms % (1000 * 60)) / 1000);
-      return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    };
-
     const updateTimer = async () => {
-      const response = await fetch('/api/timer');
+      const response = await fetch("/api/timer");
       if (response.ok) {
         const data = await response.json();
         setTimeLeft(formatTime(data.timeLeft));
@@ -41,7 +43,7 @@ export default function Timer() {
     };
 
     startTimer();
-    
+
     // Update timer every second
     const intervalId = setInterval(updateTimer, 1000);
 
@@ -51,45 +53,45 @@ export default function Timer() {
   useEffect(() => {
     // Add keyboard listener for reset sequence
     const handleKeyPress = (e: KeyboardEvent) => {
-      setResetKey(prev => {
+      setResetKey((prev) => {
         const newKey = prev + e.key;
         // Only keep last 5 characters to avoid memory issues
         return newKey.slice(-5);
       });
     };
 
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
+    window.addEventListener("keydown", handleKeyPress);
+    return () => window.removeEventListener("keydown", handleKeyPress);
   }, []);
 
   // Check for reset sequence
   useEffect(() => {
     const resetTimer = async () => {
       try {
-        const res = await fetch('/api/timer', {
-          method: 'PUT',
+        const res = await fetch("/api/timer", {
+          method: "PUT",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
-          body: JSON.stringify({ 
-            resetKey: 'techathon123' // Same as server key
-          })
+          body: JSON.stringify({
+            resetKey: "techathon123", // Same as server key
+          }),
         });
 
         if (res.ok) {
           setResetKey("");
           // Force immediate timer update
-          const timerRes = await fetch('/api/timer');
+          const timerRes = await fetch("/api/timer");
           const data = await timerRes.json();
           setTimeLeft(formatTime(data.timeLeft));
         }
       } catch {
-        console.error('Failed to reset timer');
+        console.error("Failed to reset timer");
       }
     };
 
     // Check if reset sequence matches (example: pressing 'reset')
-    if (resetKey === 'reset') {
+    if (resetKey === "reset") {
       resetTimer();
     }
   }, [resetKey]);
@@ -104,9 +106,8 @@ export default function Timer() {
         </div>
       ) : (
         <div className="timerContainer fade-in">
-          <div className="timerDisplay">Time <span className="highlight">Left</span>
-          {" "}
-          {timeLeft}
+          <div className="timerDisplay">
+            Time <span className="highlight">Left</span> {timeLeft}
           </div>
         </div>
       )}
