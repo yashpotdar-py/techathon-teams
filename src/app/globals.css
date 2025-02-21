@@ -593,6 +593,8 @@ button.deactivate:hover {
   height: 100vh;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .welcome-text {
@@ -600,6 +602,8 @@ button.deactivate:hover {
   color: var(--secondary);
   margin-bottom: 10px;
   animation: slideInFromLeft 1s ease-in-out;
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-in-out forwards;
   text-shadow: 0 0 80px rgba(255, 51, 102, 0.3);
 }
 
@@ -614,6 +618,8 @@ button.deactivate:hover {
 .main-heading:hover {
   transform: scale(1.1);
   color: var(--highlight-color);
+  transform: scale(1.1);
+  color: var(--secondary);
 }
 
 .button-container {
@@ -714,6 +720,7 @@ button.deactivate:hover {
   animation: growAndFade 4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   position: relative;
   z-index: 100;
+  animation: growAndFade 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .highlight {
