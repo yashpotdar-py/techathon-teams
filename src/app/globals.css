@@ -27,11 +27,11 @@
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Layout Measurements */
-  --container-width: 1200px;
-  --header-height: 4rem;
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
+  --container-width: 4800px; /* 4x larger */
+  --header-height: 16rem; /* 4x larger */
+  --radius-sm: 1.5rem;
+  --radius-md: 2rem;
+  --radius-lg: 4rem;
 }
 
 /* Dark Mode Overrides */
@@ -52,7 +52,11 @@
 /* Base Elements */
 body {
   color: var(--text-primary);
-  background: var(--background);
+  background: radial-gradient(
+    circle at center,
+    var(--surface) 0%,
+    var(--background) 100%
+  );
   font-family: "Game Of Squids", system-ui, -apple-system, sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
@@ -91,6 +95,8 @@ h1 {
 
 .highlight {
   color: var(--secondary);
+  font-weight: bold;
+  text-shadow: 0 0 10px currentColor;
 }
 
 /* Form Elements */
@@ -227,15 +233,48 @@ button.deactivate:hover {
 
 /* Counter styles */
 .counter {
-  position: absolute;
+  position: fixed; /* Changed from absolute */
   top: 20px;
   right: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 2rem;
+  padding: calc(var(--cell-size) * 0.1);
+  border-radius: 10px; /* Changed from 20px */
+  /* font-size: calc(var(--cell-size) * 0.1); */
+  font-size: 12rem;
   z-index: 1000;
+}
+
+.counters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.counters:hover {
+  transform: translateX(-5px);
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.domain-counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.domain-counter {
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.domain-counter:hover {
+  transform: translateX(5px);
 }
 
 /* Cell styles */
@@ -245,19 +284,21 @@ button.deactivate:hover {
   align-items: center;
   justify-content: center;
   background-color: #000; /* Set background color to black */
-  border: 1px solid; /* Ensure border is visible */
-  border-radius: 4px;
-  font-size: 1rem;
+  border: 2px solid; /* Reduced from 4px */
+  border-radius: 8px; /* Reduced from 16px */
+  font-size: calc(var(--cell-size) * 0.05); /* Base font size relative to cell size */
   color: #fff;
   height: var(--cell-size);
   width: var(--cell-size);
-  padding: 10px;
+  padding: calc(var(--cell-size) * 0.05); /* Relative padding */
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, height 0.3s, width 0.3s,
     transform 0.3s; /* Add transitions for smooth animation */
   animation: spiralIn 0.2s ease-in-out forwards;
   opacity: 0; /* Start with cells hidden */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .cell.active {
@@ -273,19 +314,28 @@ button.deactivate:hover {
 }
 
 .cell .team-name {
-  font-size: 1rem;
+  font-size: 1em; /* Relative to cell's base font size */
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .cell .team-number {
-  font-size: 0.9rem;
+  font-size: 0.9em; /* Slightly smaller than team name */
   color: #666;
+  margin-bottom: 0.3em;
 }
 
 .cell .problem-statement {
-  font-size: 0.8rem;
+  font-size: 0.8em; /* Smaller than team number */
   color: var(--secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 @keyframes fadeInScaleUp {
@@ -329,6 +379,10 @@ button.deactivate:hover {
   justify-content: center;
   height: 100vh;
   animation: fadeIn 1s ease-in-out;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  padding: 2rem;
 }
 
 .grid-container {
@@ -341,8 +395,11 @@ button.deactivate:hover {
   justify-content: center; /* Center the grid horizontally */
   align-content: center; /* Center the grid vertically */
   place-items: center; /* Center the grid items */
-  height: 100vh; /* Ensure the grid takes the full height of the viewport */
+  min-height: 90vh; /* Changed from 100vh */
+  max-width: 95vw; /* Added max-width */
+  margin: 0 auto; /* Center the grid */
   animation: fadeIn 1s ease-in-out;
+  width: fit-content;
 }
 
 .link-container {
@@ -354,10 +411,6 @@ button.deactivate:hover {
 .grid-link {
   font-size: 1.5rem;
   color: #1e88e5;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 2px solid #1e88e5;
-  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -543,19 +596,19 @@ button.deactivate:hover {
 }
 
 .welcome-text {
-  font-size: 4rem;
+  font-size: 16rem; /* 4x larger */
   color: var(--secondary);
   margin-bottom: 10px;
   animation: slideInFromLeft 1s ease-in-out;
-  text-shadow: 0 0 20px rgba(255, 51, 102, 0.3);
+  text-shadow: 0 0 80px rgba(255, 51, 102, 0.3);
 }
 
 .main-heading {
-  font-size: 12rem;
+  font-size: 48rem; /* 4x larger */
   color: var(--primary);
   cursor: pointer;
   transition: transform 0.3s, color 0.3s;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.3);
 }
 
 .main-heading:hover {
@@ -568,12 +621,12 @@ button.deactivate:hover {
 }
 
 .status-button {
-  padding: 10px 20px;
-  font-size: 1.5rem;
+  padding: 40px 80px;
+  font-size: 6rem;
   color: #000;
   background-color: var(--primary);
   border: none;
-  border-radius: 4px;
+  border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
@@ -661,4 +714,9 @@ button.deactivate:hover {
   animation: growAndFade 4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   position: relative;
   z-index: 100;
+}
+
+.highlight {
+  color: #fff;
+  text-shadow: 0 0 10px currentColor;
 }

@@ -63,7 +63,8 @@ Object.keys(baseColors).forEach((prefix) => {
 
 const Grid = () => {
   const [teams, setTeams] = useState<Team[]>([]);
-  const MIN_CELL_SIZE = 150; // Define the minimum cell size
+  const [cellSize, setCellSize] = useState(200); // Initial MIN_CELL_SIZE
+  const MIN_CELL_SIZE = 200;
 
   // Load audio files
   const activateSound = useRef<HTMLAudioElement | null>(null);
@@ -113,8 +114,38 @@ const Grid = () => {
 
   const activeTeams = teams.filter((team) => team.teamState === "active");
   const gridSize = Math.ceil(Math.sqrt(activeTeams.length));
-  const cellSize = Math.max(MIN_CELL_SIZE, 500 / gridSize);
-  const fontSize = cellSize * 0.9; // Calculate font size based on cell size
+  
+  // Calculate cell size based on viewport
+  // Handle window resize
+  useEffect(() => {
+    const calculateCellSize = () => {
+      if (typeof window === 'undefined') return MIN_CELL_SIZE;
+      
+      const viewportHeight = window.innerHeight;
+      const viewportWidth = window.innerWidth;
+      const minDimension = Math.min(viewportWidth, viewportHeight);
+      const maxCells = Math.max(gridSize, 4); // Ensure minimum grid spacing
+      return Math.max(
+        MIN_CELL_SIZE,
+        Math.floor((minDimension * 0.8) / maxCells)
+      );
+    };
+
+    const handleResize = () => {
+      setCellSize(calculateCellSize());
+    };
+
+    // Initial calculation
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, [teams.length, gridSize]); // Recalculate when teams change
+
+  const fontSize = cellSize * 0.15;
 
   const generateSpiralPositions = (n: number) => {
     const positions = Array.from({ length: n }, () => [0, 0]);
@@ -149,26 +180,31 @@ const Grid = () => {
     });
   }, [activeTeams]);
 
+  // Add this function to count teams per domain
+  const getTeamCountsByDomain = () => {
+    const counts: { [key: string]: number } = {};
+    Object.keys(baseColors).forEach(domain => {
+      counts[domain] = activeTeams.filter(team => 
+        team.problemStatement.startsWith(domain)
+      ).length;
+    });
+    return counts;
+  };
+
   return (
-    <div className="grid-page">
-      <div className="counter">
-        Active Teams: <span className="highlight">{activeTeams.length}</span>
-      </div>
+    <div className="grid-page" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '2rem' }}>
       {activeTeams.length === 0 ? (
         <div className="no-teams-message">
           <p>No active teams available.</p>
-          {/* Add any animation or additional content here */}
         </div>
       ) : (
         <div
           className="grid-container"
-          style={
-            {
-              "--cell-size": `${cellSize}px`,
-              "--grid-size": gridSize,
-              "--font-size": `${fontSize}px`,
-            } as React.CSSProperties
-          }
+          style={{
+            "--cell-size": `${cellSize}px`,
+            "--grid-size": gridSize,
+            "--font-size": `${fontSize}px`,
+          } as React.CSSProperties}
         >
           {activeTeams.map((team, index) => (
             <Cell
@@ -188,6 +224,39 @@ const Grid = () => {
           ))}
         </div>
       )}
+      
+      <div className="counters" style={{ 
+        fontSize: '7rem', 
+        padding: '1rem 2rem',
+        height: 'fit-content',
+        position: 'sticky',
+        top: '2rem',
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        borderRadius: '10px',
+        boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)',
+        minWidth: '250px'
+      }}>
+        <div className="total-counter" style={{ marginBottom: '1rem', borderBottom: '1px solid rgba(255, 255, 255, 0.2)', paddingBottom: '1rem' }}>
+          Total Active Teams: <span className="highlight" style={{color: 'rgb(255, 88, 116)'}}>{activeTeams.length}</span>
+        </div>
+        <div className="domain-counters" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          {Object.entries(getTeamCountsByDomain()).map(([domain, count]) => (
+            <div 
+              key={domain} 
+              className="domain-counter"
+              style={{ 
+                color: baseColors[domain][0],
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                padding: '0.5rem 0'
+              }}
+            >
+              <span>{domain}:</span> <span className="highlight">{count}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

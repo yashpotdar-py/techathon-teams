@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 import "@/app/globals.css";
@@ -29,11 +29,11 @@ export default function Home() {
       <div className="main-heading" ref={headingRef} onClick={handleGridClick}>
         Techathon <span className="highlight">2.0</span>
       </div>
-      <div className="button-container">
+      {/* <div className="button-container">
         <Link href="/teamStatus">
           <button className="status-button">Check Team Status</button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
