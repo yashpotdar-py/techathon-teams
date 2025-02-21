@@ -720,3 +720,128 @@ button.deactivate:hover {
   color: #fff;
   text-shadow: 0 0 10px currentColor;
 }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.introContainer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.introText {
+  font-size: 15rem;
+  font-family: "Game Of Squids", sans-serif;
+  opacity: 0;
+  animation: revealText 2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  color: var(--primary);
+}
+
+.highlight {
+  color: rgb(255, 88, 116);
+  display: inline-block;
+  animation: pulseGlow 2s infinite;
+}
+
+.timerContainer {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.timerDisplay {
+  font-size: 12rem;
+  font-family: "Game Of Squids", sans-serif;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+  color: var(--primary);
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(255, 88, 116, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(255, 88, 116, 0.8);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes reveal {
+  0% { 
+    opacity: 0;
+    transform: translateY(100px) scale(0.5);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: scale(1);
+    text-shadow: 0 0 20px rgba(255, 88, 116, 0.5);
+  }
+  50% { 
+    transform: scale(1.05);
+    text-shadow: 0 0 40px rgba(255, 88, 116, 0.8);
+  }
+}
+
+.animate-reveal {
+  animation: reveal 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from 'next/router';
 import Cell from "./Cell";
 
 interface Team {
@@ -65,6 +66,7 @@ const Grid = () => {
   const [teams, setTeams] = useState<Team[]>([]);
   const [cellSize, setCellSize] = useState(200); // Initial MIN_CELL_SIZE
   const MIN_CELL_SIZE = 200;
+  const router = useRouter();
 
   // Load audio files
   const activateSound = useRef<HTMLAudioElement | null>(null);
@@ -191,6 +193,13 @@ const Grid = () => {
     return counts;
   };
 
+  const handleTimerStart = async () => {
+    await fetch('/api/timer', {
+      method: 'POST'
+    });
+    router.push('/timer');
+  };
+
   return (
     <div className="grid-page" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '2rem' }}>
       {activeTeams.length === 0 ? (
@@ -257,6 +266,25 @@ const Grid = () => {
           ))}
         </div>
       </div>
+      <button 
+        className="start-timer-btn"
+        onClick={handleTimerStart}
+        style={{
+          position: 'fixed',
+          bottom: '2rem',
+          right: '2rem',
+          padding: '1rem 2rem',
+          fontSize: '2rem',
+          backgroundColor: 'var(--secondary)',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '8px',
+          cursor: 'pointer',
+          transition: 'all 0.3s ease'
+        }}
+      >
+        Start Timer
+      </button>
     </div>
   );
 };
