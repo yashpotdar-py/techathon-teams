@@ -1,6 +1,4 @@
-let globalStartTime: number | null = null;
-const RESET_KEY = "techathon123"; // Replace with a long, random string
-
+// timer.ts
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
@@ -8,26 +6,23 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    globalStartTime = Date.now();
-    return res.status(200).json({ startTime: globalStartTime });
-  } else if (req.method === "GET") {
-    if (!globalStartTime) {
-      return res.status(400).json({ error: "Timer not started" });
-    }
+    // Set the target date and time (February 23, 2025, 12:00 PM IST)
+    const targetDate = new Date("2025-02-23T12:00:00+05:30");
     const currentTime = Date.now();
-    const elapsedTime = currentTime - globalStartTime;
-    const timeLeft = Math.max(24 * 60 * 60 * 1000 - elapsedTime, 0); // 24 hours in ms
+    const timeLeft = Math.max(targetDate.getTime() - currentTime, 0);
+
+    return res.status(200).json({ timeLeft });
+  } else if (req.method === "GET") {
+    // Set the target date and time (February 23, 2025, 12:00 PM IST)
+    const targetDate = new Date("2025-02-23T12:00:00+05:30");
+    const currentTime = Date.now();
+    const timeLeft = Math.max(targetDate.getTime() - currentTime, 0);
 
     return res.status(200).json({ timeLeft });
   } else if (req.method === "PUT") {
-    const { resetKey } = req.body;
-    
-    // Verify reset key
-    if (resetKey !== RESET_KEY) {
-      return res.status(403).json({ error: "Unauthorized" });
-    }
-
-    globalStartTime = Date.now();
+    // Reset logic (if needed)
     return res.status(200).json({ message: "Timer reset successfully" });
+  } else {
+    return res.status(405).json({ error: "Method Not Allowed" });
   }
 }
