@@ -1,7 +1,7 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 
 const uri =
-  "mongodb+srv://admin:admin@techathon-teams.euwqn.mongodb.net/?retryWrites=true&w=majority&appName=techathon-teams";
+  "mongodb+srv://admin:YOUR_PASSWORD_HERE@techathon-teams.euwqn.mongodb.net/?retryWrites=true&w=majority&appName=techathon-teams";
 
 let client: MongoClient | null = null;
 
